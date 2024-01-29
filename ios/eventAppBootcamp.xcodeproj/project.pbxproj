@@ -14,6 +14,86 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-eventAppBootcamp-eventAppBootcampTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-eventAppBootcamp-eventAppBootcampTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D5E955D93FC04899A2A10EF9 /* app_icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4188257B54C2497D71E60 /* app_icons.ttf */; };
+		9CD6D1C5FE1145E6B5B3A49B /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED897CE816724EE6A420F77A /* Poppins-Black.ttf */; };
+		32E26BBC715A4DADA89F963D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E134244C79894A938EB304F3 /* Poppins-Bold.ttf */; };
+		D79988F79C93468499150254 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 081741453F994F45A81A324F /* Poppins-ExtraBold.ttf */; };
+		B3D155AF617A4CA2BA88F4D1 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3021C9EEB13B4866BB8C8FD2 /* Poppins-ExtraLight.ttf */; };
+		55F3459F746E489F9D1C7ADD /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87051DB7200F465CB4855DFD /* Poppins-Light.ttf */; };
+		693D2A14C77B4DB48F477920 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A9DE5EC088A4BBF99957122 /* Poppins-Medium.ttf */; };
+		36CFA5E43E114399BE7378EB /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3271D271C25A46B29F150B13 /* Poppins-Regular.ttf */; };
+		95A5A50174B4468C82936DA9 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FDD79C8918648FD95A5685D /* Poppins-SemiBold.ttf */; };
+		B57D14C8EF2B4E93AC9D9F4B /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01F739A8CD34A50B2EE7747 /* Poppins-Thin.ttf */; };
+		7870ED296FE9490FAD53E932 /* amazonpay.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C87BC4BBD143739EF0D3DB /* amazonpay.png */; };
+		D802F4C81FC64E91B9CF830F /* applepay.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F037EA4F7F4A8A9E7456B4 /* applepay.png */; };
+		E8F85E6E1A6E4273B5791958 /* avatar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2576979805B48439FF9286A /* avatar.jpeg */; };
+		EB9C9553DCB744F999F28772 /* gpay.png in Resources */ = {isa = PBXBuildFile; fileRef = AB40AEEB68C648039D328EB6 /* gpay.png */; };
+		F2EDE530FAF94D31ACF0C807 /* mabelmatiz_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = CCDFAA6885054CD9B7BB6ECB /* mabelmatiz_portrait.png */; };
+		9606D00793BD401F93B821CC /* mabelmatiz_square.png in Resources */ = {isa = PBXBuildFile; fileRef = E84767A4E7234928BEEBD6A6 /* mabelmatiz_square.png */; };
+		CB64A64C79734A138EF0506C /* cappuccino_pic_1_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = B667C539A163412BBEE19085 /* cappuccino_pic_1_portrait.png */; };
+		56C431EB7F2842908A022ECF /* cappuccino_pic_2_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = E539EB184AF54BA1B974E526 /* cappuccino_pic_2_portrait.png */; };
+		58294084AC6D42E69A6CE728 /* cappuccino_pic_3_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = E99585CEC11C4624B274407B /* cappuccino_pic_3_portrait.png */; };
+		BA3168D94143442B948EE570 /* cappuccino_pic_1_square.png in Resources */ = {isa = PBXBuildFile; fileRef = C1B4E933514C4C49836E1FFC /* cappuccino_pic_1_square.png */; };
+		C1EA1C10A8DC4A4C9A01D7CD /* cappuccino_pic_2_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C3DC866BFD43A4AB189D65 /* cappuccino_pic_2_square.png */; };
+		BCEA5AE5BC474B449AB3A99F /* cappuccino_pic_3_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C8E4D95CC6E4942BBA2F86E /* cappuccino_pic_3_square.png */; };
+		A38E7D8E8F60413DBB604BC1 /* espresso_pic_1_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = F0E11EBCE51C47A293DDBD13 /* espresso_pic_1_portrait.png */; };
+		EB5F01EFF7044EB899708073 /* espresso_pic_2_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 17A4DCC6EAEC49C79319F433 /* espresso_pic_2_portrait.png */; };
+		71AD5C510139488D9B50AD8A /* espresso_pic_3_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 312D1B0586C94402B7CC238B /* espresso_pic_3_portrait.png */; };
+		6FE118230EEC4D26BC9094DF /* espresso_pic_1_square.png in Resources */ = {isa = PBXBuildFile; fileRef = B51B728999074EDC86ED3007 /* espresso_pic_1_square.png */; };
+		420A688BD1D14B5A86144CE6 /* espresso_pic_2_square.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA819385F7B41B89B7D8100 /* espresso_pic_2_square.png */; };
+		567455C33FE54C73B58BEB29 /* espresso_pic_3_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 58FBD6E1AB70491F81438E12 /* espresso_pic_3_square.png */; };
+		90C4985B51474EA78DAF02A8 /* black_coffee_pic_1_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = BB03199ABAA7474EB6416B9B /* black_coffee_pic_1_portrait.png */; };
+		7F76CD6556D4474988A6538E /* black_coffee_pic_2_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 87AEEC90D5174B63B8A5C816 /* black_coffee_pic_2_portrait.png */; };
+		240E95FAE7644A80ACFF3C45 /* black_coffee_pic_3_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 089FC87AC30A4B07AF542582 /* black_coffee_pic_3_portrait.png */; };
+		0B2A71C73D9644BAAE61A037 /* black_coffee_pic_1_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D35A04C9F0F413ABD814626 /* black_coffee_pic_1_square.png */; };
+		F6839F33E7704C7C91F60D1E /* black_coffee_pic_2_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AC35D5F0DE54621A2816878 /* black_coffee_pic_2_square.png */; };
+		619C687A726048599EE46FBF /* black_coffee_pic_3_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5168584D3F493599330E12 /* black_coffee_pic_3_square.png */; };
+		68065BD07CA84B5F9386E4E9 /* afacanlarsirki_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C9BD8FC24E74B4CA25AE579 /* afacanlarsirki_portrait.jpg */; };
+		79C2FB55396844F59AC37A88 /* afacanlarsirki_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D40F8694EFF4F98800BDD49 /* afacanlarsirki_square.jpg */; };
+		4FA6520E7DBB4585BA07FD9E /* canozan_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43816F87F13D48669C06F08F /* canozan_portrait.jpg */; };
+		EADB5EBEE73940929D8FACDB /* gokhanturkmen_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B800C42EDD914E9BAC6AED62 /* gokhanturkmen_portrait.jpg */; };
+		B86622D07EC749B684C52633 /* mazharfuat_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 0623905C96E8453AB3AD4BD7 /* mazharfuat_portrait.png */; };
+		48AE229312C3496F99ECF3AA /* melikesahin_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D78E3D46E847F4AE1089D4 /* melikesahin_portrait.png */; };
+		51B277BF50644C2B8179E5FD /* canozan_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1ECE1347A8B04BC786F3CCF6 /* canozan_square.jpg */; };
+		334597E4D70B48708B461AD7 /* gokhanturkmen_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A010FDA0E8844CBB1D23F2B /* gokhanturkmen_square.jpg */; };
+		724AB21BBD734FE09B816352 /* mazharfuat_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BC90DB3B0A2472DA15BC8B4 /* mazharfuat_square.png */; };
+		6949855AA6F944B98400888D /* melikesahin_square.png in Resources */ = {isa = PBXBuildFile; fileRef = EE3236188F074404A8C675BE /* melikesahin_square.png */; };
+		6DB16952C4254D87A45F3217 /* izmirfest_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5121C43B4D4D4CB5B752E697 /* izmirfest_portrait.jpg */; };
+		2D03231500484365B18A14A7 /* kocaelifest_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB3A44FF73F42F7BF8A5BBE /* kocaelifest_portrait.png */; };
+		A0F4DAD92F1E49A38A04B688 /* konyafest_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63338D8489C04BAF9E25F86D /* konyafest_portrait.jpg */; };
+		25FB7BFF16634FA9B2A8953A /* sakaryafest_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A589214959041028683BB68 /* sakaryafest_portrait.jpg */; };
+		A3CD25521DE94977B068804D /* whatafest_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD784B0A30C46AE8D3FBDE3 /* whatafest_portrait.png */; };
+		236E62D1706A4EE5B26C1B4D /* wolfest_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 0873FDD9B55D49199BDA3914 /* wolfest_portrait.png */; };
+		F76DABA9B87C430C8F1F92C6 /* izmirfest_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB608AE824834AB9B0E4F54F /* izmirfest_square.jpg */; };
+		155C24C45C564DC493C516EF /* kocaelifest_square.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6E074AE1EC4E1DB556139A /* kocaelifest_square.png */; };
+		D359A3BB54E44B56B4DFF33E /* konyafest_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51FFCC9A594F442B9067596D /* konyafest_square.jpg */; };
+		CEEE74B16A0E4E6490EAE15F /* sakaryafest_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 173987EC34E643AA83BC420E /* sakaryafest_square.jpg */; };
+		DD1AAD06897B47E8B53B5C77 /* whatafest_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FACBB9E65B94E7E89316FFB /* whatafest_square.png */; };
+		4D9FE7CF90F249EBAD5780DE /* wolfest_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E231FD036402B8020D7B7 /* wolfest_square.png */; };
+		B5AD87ACB5324367A5972E80 /* babyshark_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 6412F548F21D479BA8E41E37 /* babyshark_portrait.png */; };
+		4CAACE57A0D24241B5B8E13C /* biruzayhayali_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15237CB8DA2445C8967C69FE /* biruzayhayali_portrait.jpg */; };
+		69AD486C9613454C98DEA81A /* kucukprens_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F70ACEBA872042D594CCC743 /* kucukprens_portrait.jpg */; };
+		135DBF54EE764B25B3243A02 /* masakoca_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 380B6064D17B4EFE81060B66 /* masakoca_portrait.png */; };
+		52F053CBA85343338CD4A014 /* babyshark_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 86049F42B4524DDC9E9E66D3 /* babyshark_square.png */; };
+		1027C209D52640A3A35AE144 /* biruzayhayali_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 446380145A4D477E96B18F9E /* biruzayhayali_square.jpg */; };
+		E1EE6A12FE174EBBBACCF684 /* kucukprens_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25AC1224DA874AF094FEB448 /* kucukprens_square.jpg */; };
+		D2E5AAC8F5094B5B9F5BF1DF /* masakoca_square.png in Resources */ = {isa = PBXBuildFile; fileRef = F700255A3EC4422291B3338E /* masakoca_square.png */; };
+		E51F901FB03F47D589BDC871 /* ankarastandup_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F1E1D76684A90861D37FA /* ankarastandup_portrait.jpg */; };
+		A3ADBD728B184FC48CC0E15C /* atademirelgazinosu_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A140C4A9C44D29C8BC6B0 /* atademirelgazinosu_portrait.png */; };
+		F6AB236D8687416598DAFFAF /* dogudemirkol_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C23E2656929148239A6F6763 /* dogudemirkol_portrait.jpg */; };
+		8EB1CD395F8C4A99829555AB /* ozgurturhan_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D211B7D5544274B489B96D /* ozgurturhan_portrait.png */; };
+		C2AFCE042FFE48318038DD71 /* tuzbiber_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D015452FCA954D7E89ABE677 /* tuzbiber_portrait.jpg */; };
+		9F6CF6C8BCC54481AB7B9A25 /* ankarastandup_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44ACC8CBE4774AC4AB95EF55 /* ankarastandup_square.jpg */; };
+		2AF0994656EB44128D6E3FFD /* atademirelgazinosu_square.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A68579EACD4277AD249596 /* atademirelgazinosu_square.png */; };
+		A30604BBD52F4B2581B16C04 /* dogudemirkol_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6277BA7EA5D245AD82302E2A /* dogudemirkol_square.jpg */; };
+		01693CA342594E71B413E249 /* ozgurturhan_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF602B40D534B82B70817EF /* ozgurturhan_square.png */; };
+		43A6F324E1F7488CAE3E80F2 /* tuzbiber_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BBF012274D044F78A49633E2 /* tuzbiber_square.jpg */; };
+		87694CC5B81E49EEA6275180 /* istibdatkumpanyasi_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC9D7424A06F46038252E512 /* istibdatkumpanyasi_portrait.jpg */; };
+		28A294A0766F441E89C97782 /* vedaoyunu_portrait.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BDB72238EABE42CCA39972EB /* vedaoyunu_portrait.jpeg */; };
+		809D761907824541BEBBECC3 /* zenginmutfagi_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C62772ABA11497792CFAE41 /* zenginmutfagi_portrait.png */; };
+		6FCBCD4978AE4696B016CE38 /* istibdatkumpanyasi_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B2FDDF3915B43EBA8259CBD /* istibdatkumpanyasi_square.jpg */; };
+		D2A3220B592D4EE1BC8DFA21 /* vedaoyunu_square.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 19C0F88EAB96451D9444314E /* vedaoyunu_square.jpeg */; };
+		D45A7B016259467A9536F2FB /* zenginmutfagi_square.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F82FE93AC5412585958E21 /* zenginmutfagi_square.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +124,86 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = eventAppBootcamp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-eventAppBootcamp-eventAppBootcampTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventAppBootcamp-eventAppBootcampTests.release.xcconfig"; path = "Target Support Files/Pods-eventAppBootcamp-eventAppBootcampTests/Pods-eventAppBootcamp-eventAppBootcampTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		92A4188257B54C2497D71E60 /* app_icons.ttf */ = {isa = PBXFileReference; name = "app_icons.ttf"; path = "../src/assets/fonts/app_icons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED897CE816724EE6A420F77A /* Poppins-Black.ttf */ = {isa = PBXFileReference; name = "Poppins-Black.ttf"; path = "../src/assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E134244C79894A938EB304F3 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		081741453F994F45A81A324F /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraBold.ttf"; path = "../src/assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3021C9EEB13B4866BB8C8FD2 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraLight.ttf"; path = "../src/assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		87051DB7200F465CB4855DFD /* Poppins-Light.ttf */ = {isa = PBXFileReference; name = "Poppins-Light.ttf"; path = "../src/assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4A9DE5EC088A4BBF99957122 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3271D271C25A46B29F150B13 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7FDD79C8918648FD95A5685D /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B01F739A8CD34A50B2EE7747 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; name = "Poppins-Thin.ttf"; path = "../src/assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		04C87BC4BBD143739EF0D3DB /* amazonpay.png */ = {isa = PBXFileReference; name = "amazonpay.png"; path = "../src/assets/app_images/amazonpay.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		86F037EA4F7F4A8A9E7456B4 /* applepay.png */ = {isa = PBXFileReference; name = "applepay.png"; path = "../src/assets/app_images/applepay.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E2576979805B48439FF9286A /* avatar.jpeg */ = {isa = PBXFileReference; name = "avatar.jpeg"; path = "../src/assets/app_images/avatar.jpeg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AB40AEEB68C648039D328EB6 /* gpay.png */ = {isa = PBXFileReference; name = "gpay.png"; path = "../src/assets/app_images/gpay.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CCDFAA6885054CD9B7BB6ECB /* mabelmatiz_portrait.png */ = {isa = PBXFileReference; name = "mabelmatiz_portrait.png"; path = "../src/assets/event_assets/concerts/portrait/mabelmatiz_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E84767A4E7234928BEEBD6A6 /* mabelmatiz_square.png */ = {isa = PBXFileReference; name = "mabelmatiz_square.png"; path = "../src/assets/event_assets/concerts/square/mabelmatiz_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B667C539A163412BBEE19085 /* cappuccino_pic_1_portrait.png */ = {isa = PBXFileReference; name = "cappuccino_pic_1_portrait.png"; path = "../src/assets/event_assets/fests/portrait/cappuccino_pic_1_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E539EB184AF54BA1B974E526 /* cappuccino_pic_2_portrait.png */ = {isa = PBXFileReference; name = "cappuccino_pic_2_portrait.png"; path = "../src/assets/event_assets/fests/portrait/cappuccino_pic_2_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E99585CEC11C4624B274407B /* cappuccino_pic_3_portrait.png */ = {isa = PBXFileReference; name = "cappuccino_pic_3_portrait.png"; path = "../src/assets/event_assets/fests/portrait/cappuccino_pic_3_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C1B4E933514C4C49836E1FFC /* cappuccino_pic_1_square.png */ = {isa = PBXFileReference; name = "cappuccino_pic_1_square.png"; path = "../src/assets/event_assets/fests/square/cappuccino_pic_1_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		19C3DC866BFD43A4AB189D65 /* cappuccino_pic_2_square.png */ = {isa = PBXFileReference; name = "cappuccino_pic_2_square.png"; path = "../src/assets/event_assets/fests/square/cappuccino_pic_2_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C8E4D95CC6E4942BBA2F86E /* cappuccino_pic_3_square.png */ = {isa = PBXFileReference; name = "cappuccino_pic_3_square.png"; path = "../src/assets/event_assets/fests/square/cappuccino_pic_3_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F0E11EBCE51C47A293DDBD13 /* espresso_pic_1_portrait.png */ = {isa = PBXFileReference; name = "espresso_pic_1_portrait.png"; path = "../src/assets/event_assets/standups/portrait/espresso_pic_1_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		17A4DCC6EAEC49C79319F433 /* espresso_pic_2_portrait.png */ = {isa = PBXFileReference; name = "espresso_pic_2_portrait.png"; path = "../src/assets/event_assets/standups/portrait/espresso_pic_2_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		312D1B0586C94402B7CC238B /* espresso_pic_3_portrait.png */ = {isa = PBXFileReference; name = "espresso_pic_3_portrait.png"; path = "../src/assets/event_assets/standups/portrait/espresso_pic_3_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B51B728999074EDC86ED3007 /* espresso_pic_1_square.png */ = {isa = PBXFileReference; name = "espresso_pic_1_square.png"; path = "../src/assets/event_assets/standups/square/espresso_pic_1_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DAA819385F7B41B89B7D8100 /* espresso_pic_2_square.png */ = {isa = PBXFileReference; name = "espresso_pic_2_square.png"; path = "../src/assets/event_assets/standups/square/espresso_pic_2_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		58FBD6E1AB70491F81438E12 /* espresso_pic_3_square.png */ = {isa = PBXFileReference; name = "espresso_pic_3_square.png"; path = "../src/assets/event_assets/standups/square/espresso_pic_3_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BB03199ABAA7474EB6416B9B /* black_coffee_pic_1_portrait.png */ = {isa = PBXFileReference; name = "black_coffee_pic_1_portrait.png"; path = "../src/assets/event_assets/theatres/portrait/black_coffee_pic_1_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		87AEEC90D5174B63B8A5C816 /* black_coffee_pic_2_portrait.png */ = {isa = PBXFileReference; name = "black_coffee_pic_2_portrait.png"; path = "../src/assets/event_assets/theatres/portrait/black_coffee_pic_2_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		089FC87AC30A4B07AF542582 /* black_coffee_pic_3_portrait.png */ = {isa = PBXFileReference; name = "black_coffee_pic_3_portrait.png"; path = "../src/assets/event_assets/theatres/portrait/black_coffee_pic_3_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1D35A04C9F0F413ABD814626 /* black_coffee_pic_1_square.png */ = {isa = PBXFileReference; name = "black_coffee_pic_1_square.png"; path = "../src/assets/event_assets/theatres/square/black_coffee_pic_1_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1AC35D5F0DE54621A2816878 /* black_coffee_pic_2_square.png */ = {isa = PBXFileReference; name = "black_coffee_pic_2_square.png"; path = "../src/assets/event_assets/theatres/square/black_coffee_pic_2_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6D5168584D3F493599330E12 /* black_coffee_pic_3_square.png */ = {isa = PBXFileReference; name = "black_coffee_pic_3_square.png"; path = "../src/assets/event_assets/theatres/square/black_coffee_pic_3_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C9BD8FC24E74B4CA25AE579 /* afacanlarsirki_portrait.jpg */ = {isa = PBXFileReference; name = "afacanlarsirki_portrait.jpg"; path = "../src/assets/event_assets/kids/portrait/afacanlarsirki_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2D40F8694EFF4F98800BDD49 /* afacanlarsirki_square.jpg */ = {isa = PBXFileReference; name = "afacanlarsirki_square.jpg"; path = "../src/assets/event_assets/kids/square/afacanlarsirki_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		43816F87F13D48669C06F08F /* canozan_portrait.jpg */ = {isa = PBXFileReference; name = "canozan_portrait.jpg"; path = "../src/assets/event_assets/concerts/portrait/canozan_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B800C42EDD914E9BAC6AED62 /* gokhanturkmen_portrait.jpg */ = {isa = PBXFileReference; name = "gokhanturkmen_portrait.jpg"; path = "../src/assets/event_assets/concerts/portrait/gokhanturkmen_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0623905C96E8453AB3AD4BD7 /* mazharfuat_portrait.png */ = {isa = PBXFileReference; name = "mazharfuat_portrait.png"; path = "../src/assets/event_assets/concerts/portrait/mazharfuat_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C0D78E3D46E847F4AE1089D4 /* melikesahin_portrait.png */ = {isa = PBXFileReference; name = "melikesahin_portrait.png"; path = "../src/assets/event_assets/concerts/portrait/melikesahin_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1ECE1347A8B04BC786F3CCF6 /* canozan_square.jpg */ = {isa = PBXFileReference; name = "canozan_square.jpg"; path = "../src/assets/event_assets/concerts/square/canozan_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1A010FDA0E8844CBB1D23F2B /* gokhanturkmen_square.jpg */ = {isa = PBXFileReference; name = "gokhanturkmen_square.jpg"; path = "../src/assets/event_assets/concerts/square/gokhanturkmen_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2BC90DB3B0A2472DA15BC8B4 /* mazharfuat_square.png */ = {isa = PBXFileReference; name = "mazharfuat_square.png"; path = "../src/assets/event_assets/concerts/square/mazharfuat_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EE3236188F074404A8C675BE /* melikesahin_square.png */ = {isa = PBXFileReference; name = "melikesahin_square.png"; path = "../src/assets/event_assets/concerts/square/melikesahin_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5121C43B4D4D4CB5B752E697 /* izmirfest_portrait.jpg */ = {isa = PBXFileReference; name = "izmirfest_portrait.jpg"; path = "../src/assets/event_assets/fests/portrait/izmirfest_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FBB3A44FF73F42F7BF8A5BBE /* kocaelifest_portrait.png */ = {isa = PBXFileReference; name = "kocaelifest_portrait.png"; path = "../src/assets/event_assets/fests/portrait/kocaelifest_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		63338D8489C04BAF9E25F86D /* konyafest_portrait.jpg */ = {isa = PBXFileReference; name = "konyafest_portrait.jpg"; path = "../src/assets/event_assets/fests/portrait/konyafest_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5A589214959041028683BB68 /* sakaryafest_portrait.jpg */ = {isa = PBXFileReference; name = "sakaryafest_portrait.jpg"; path = "../src/assets/event_assets/fests/portrait/sakaryafest_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EAD784B0A30C46AE8D3FBDE3 /* whatafest_portrait.png */ = {isa = PBXFileReference; name = "whatafest_portrait.png"; path = "../src/assets/event_assets/fests/portrait/whatafest_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0873FDD9B55D49199BDA3914 /* wolfest_portrait.png */ = {isa = PBXFileReference; name = "wolfest_portrait.png"; path = "../src/assets/event_assets/fests/portrait/wolfest_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DB608AE824834AB9B0E4F54F /* izmirfest_square.jpg */ = {isa = PBXFileReference; name = "izmirfest_square.jpg"; path = "../src/assets/event_assets/fests/square/izmirfest_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AF6E074AE1EC4E1DB556139A /* kocaelifest_square.png */ = {isa = PBXFileReference; name = "kocaelifest_square.png"; path = "../src/assets/event_assets/fests/square/kocaelifest_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		51FFCC9A594F442B9067596D /* konyafest_square.jpg */ = {isa = PBXFileReference; name = "konyafest_square.jpg"; path = "../src/assets/event_assets/fests/square/konyafest_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		173987EC34E643AA83BC420E /* sakaryafest_square.jpg */ = {isa = PBXFileReference; name = "sakaryafest_square.jpg"; path = "../src/assets/event_assets/fests/square/sakaryafest_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4FACBB9E65B94E7E89316FFB /* whatafest_square.png */ = {isa = PBXFileReference; name = "whatafest_square.png"; path = "../src/assets/event_assets/fests/square/whatafest_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6B3E231FD036402B8020D7B7 /* wolfest_square.png */ = {isa = PBXFileReference; name = "wolfest_square.png"; path = "../src/assets/event_assets/fests/square/wolfest_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6412F548F21D479BA8E41E37 /* babyshark_portrait.png */ = {isa = PBXFileReference; name = "babyshark_portrait.png"; path = "../src/assets/event_assets/kids/portrait/babyshark_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		15237CB8DA2445C8967C69FE /* biruzayhayali_portrait.jpg */ = {isa = PBXFileReference; name = "biruzayhayali_portrait.jpg"; path = "../src/assets/event_assets/kids/portrait/biruzayhayali_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F70ACEBA872042D594CCC743 /* kucukprens_portrait.jpg */ = {isa = PBXFileReference; name = "kucukprens_portrait.jpg"; path = "../src/assets/event_assets/kids/portrait/kucukprens_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		380B6064D17B4EFE81060B66 /* masakoca_portrait.png */ = {isa = PBXFileReference; name = "masakoca_portrait.png"; path = "../src/assets/event_assets/kids/portrait/masakoca_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		86049F42B4524DDC9E9E66D3 /* babyshark_square.png */ = {isa = PBXFileReference; name = "babyshark_square.png"; path = "../src/assets/event_assets/kids/square/babyshark_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		446380145A4D477E96B18F9E /* biruzayhayali_square.jpg */ = {isa = PBXFileReference; name = "biruzayhayali_square.jpg"; path = "../src/assets/event_assets/kids/square/biruzayhayali_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		25AC1224DA874AF094FEB448 /* kucukprens_square.jpg */ = {isa = PBXFileReference; name = "kucukprens_square.jpg"; path = "../src/assets/event_assets/kids/square/kucukprens_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F700255A3EC4422291B3338E /* masakoca_square.png */ = {isa = PBXFileReference; name = "masakoca_square.png"; path = "../src/assets/event_assets/kids/square/masakoca_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4C8F1E1D76684A90861D37FA /* ankarastandup_portrait.jpg */ = {isa = PBXFileReference; name = "ankarastandup_portrait.jpg"; path = "../src/assets/event_assets/standups/portrait/ankarastandup_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1A3A140C4A9C44D29C8BC6B0 /* atademirelgazinosu_portrait.png */ = {isa = PBXFileReference; name = "atademirelgazinosu_portrait.png"; path = "../src/assets/event_assets/standups/portrait/atademirelgazinosu_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C23E2656929148239A6F6763 /* dogudemirkol_portrait.jpg */ = {isa = PBXFileReference; name = "dogudemirkol_portrait.jpg"; path = "../src/assets/event_assets/standups/portrait/dogudemirkol_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D2D211B7D5544274B489B96D /* ozgurturhan_portrait.png */ = {isa = PBXFileReference; name = "ozgurturhan_portrait.png"; path = "../src/assets/event_assets/standups/portrait/ozgurturhan_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D015452FCA954D7E89ABE677 /* tuzbiber_portrait.jpg */ = {isa = PBXFileReference; name = "tuzbiber_portrait.jpg"; path = "../src/assets/event_assets/standups/portrait/tuzbiber_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		44ACC8CBE4774AC4AB95EF55 /* ankarastandup_square.jpg */ = {isa = PBXFileReference; name = "ankarastandup_square.jpg"; path = "../src/assets/event_assets/standups/square/ankarastandup_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B9A68579EACD4277AD249596 /* atademirelgazinosu_square.png */ = {isa = PBXFileReference; name = "atademirelgazinosu_square.png"; path = "../src/assets/event_assets/standups/square/atademirelgazinosu_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6277BA7EA5D245AD82302E2A /* dogudemirkol_square.jpg */ = {isa = PBXFileReference; name = "dogudemirkol_square.jpg"; path = "../src/assets/event_assets/standups/square/dogudemirkol_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9BF602B40D534B82B70817EF /* ozgurturhan_square.png */ = {isa = PBXFileReference; name = "ozgurturhan_square.png"; path = "../src/assets/event_assets/standups/square/ozgurturhan_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BBF012274D044F78A49633E2 /* tuzbiber_square.jpg */ = {isa = PBXFileReference; name = "tuzbiber_square.jpg"; path = "../src/assets/event_assets/standups/square/tuzbiber_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BC9D7424A06F46038252E512 /* istibdatkumpanyasi_portrait.jpg */ = {isa = PBXFileReference; name = "istibdatkumpanyasi_portrait.jpg"; path = "../src/assets/event_assets/theatres/portrait/istibdatkumpanyasi_portrait.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BDB72238EABE42CCA39972EB /* vedaoyunu_portrait.jpeg */ = {isa = PBXFileReference; name = "vedaoyunu_portrait.jpeg"; path = "../src/assets/event_assets/theatres/portrait/vedaoyunu_portrait.jpeg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C62772ABA11497792CFAE41 /* zenginmutfagi_portrait.png */ = {isa = PBXFileReference; name = "zenginmutfagi_portrait.png"; path = "../src/assets/event_assets/theatres/portrait/zenginmutfagi_portrait.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5B2FDDF3915B43EBA8259CBD /* istibdatkumpanyasi_square.jpg */ = {isa = PBXFileReference; name = "istibdatkumpanyasi_square.jpg"; path = "../src/assets/event_assets/theatres/square/istibdatkumpanyasi_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		19C0F88EAB96451D9444314E /* vedaoyunu_square.jpeg */ = {isa = PBXFileReference; name = "vedaoyunu_square.jpeg"; path = "../src/assets/event_assets/theatres/square/vedaoyunu_square.jpeg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A0F82FE93AC5412585958E21 /* zenginmutfagi_square.png */ = {isa = PBXFileReference; name = "zenginmutfagi_square.png"; path = "../src/assets/event_assets/theatres/square/zenginmutfagi_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +282,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				58CE0407221C44A284FA8892 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +308,94 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		58CE0407221C44A284FA8892 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				92A4188257B54C2497D71E60 /* app_icons.ttf */,
+				ED897CE816724EE6A420F77A /* Poppins-Black.ttf */,
+				E134244C79894A938EB304F3 /* Poppins-Bold.ttf */,
+				081741453F994F45A81A324F /* Poppins-ExtraBold.ttf */,
+				3021C9EEB13B4866BB8C8FD2 /* Poppins-ExtraLight.ttf */,
+				87051DB7200F465CB4855DFD /* Poppins-Light.ttf */,
+				4A9DE5EC088A4BBF99957122 /* Poppins-Medium.ttf */,
+				3271D271C25A46B29F150B13 /* Poppins-Regular.ttf */,
+				7FDD79C8918648FD95A5685D /* Poppins-SemiBold.ttf */,
+				B01F739A8CD34A50B2EE7747 /* Poppins-Thin.ttf */,
+				04C87BC4BBD143739EF0D3DB /* amazonpay.png */,
+				86F037EA4F7F4A8A9E7456B4 /* applepay.png */,
+				E2576979805B48439FF9286A /* avatar.jpeg */,
+				AB40AEEB68C648039D328EB6 /* gpay.png */,
+				CCDFAA6885054CD9B7BB6ECB /* mabelmatiz_portrait.png */,
+				E84767A4E7234928BEEBD6A6 /* mabelmatiz_square.png */,
+				B667C539A163412BBEE19085 /* cappuccino_pic_1_portrait.png */,
+				E539EB184AF54BA1B974E526 /* cappuccino_pic_2_portrait.png */,
+				E99585CEC11C4624B274407B /* cappuccino_pic_3_portrait.png */,
+				C1B4E933514C4C49836E1FFC /* cappuccino_pic_1_square.png */,
+				19C3DC866BFD43A4AB189D65 /* cappuccino_pic_2_square.png */,
+				6C8E4D95CC6E4942BBA2F86E /* cappuccino_pic_3_square.png */,
+				F0E11EBCE51C47A293DDBD13 /* espresso_pic_1_portrait.png */,
+				17A4DCC6EAEC49C79319F433 /* espresso_pic_2_portrait.png */,
+				312D1B0586C94402B7CC238B /* espresso_pic_3_portrait.png */,
+				B51B728999074EDC86ED3007 /* espresso_pic_1_square.png */,
+				DAA819385F7B41B89B7D8100 /* espresso_pic_2_square.png */,
+				58FBD6E1AB70491F81438E12 /* espresso_pic_3_square.png */,
+				BB03199ABAA7474EB6416B9B /* black_coffee_pic_1_portrait.png */,
+				87AEEC90D5174B63B8A5C816 /* black_coffee_pic_2_portrait.png */,
+				089FC87AC30A4B07AF542582 /* black_coffee_pic_3_portrait.png */,
+				1D35A04C9F0F413ABD814626 /* black_coffee_pic_1_square.png */,
+				1AC35D5F0DE54621A2816878 /* black_coffee_pic_2_square.png */,
+				6D5168584D3F493599330E12 /* black_coffee_pic_3_square.png */,
+				6C9BD8FC24E74B4CA25AE579 /* afacanlarsirki_portrait.jpg */,
+				2D40F8694EFF4F98800BDD49 /* afacanlarsirki_square.jpg */,
+				43816F87F13D48669C06F08F /* canozan_portrait.jpg */,
+				B800C42EDD914E9BAC6AED62 /* gokhanturkmen_portrait.jpg */,
+				0623905C96E8453AB3AD4BD7 /* mazharfuat_portrait.png */,
+				C0D78E3D46E847F4AE1089D4 /* melikesahin_portrait.png */,
+				1ECE1347A8B04BC786F3CCF6 /* canozan_square.jpg */,
+				1A010FDA0E8844CBB1D23F2B /* gokhanturkmen_square.jpg */,
+				2BC90DB3B0A2472DA15BC8B4 /* mazharfuat_square.png */,
+				EE3236188F074404A8C675BE /* melikesahin_square.png */,
+				5121C43B4D4D4CB5B752E697 /* izmirfest_portrait.jpg */,
+				FBB3A44FF73F42F7BF8A5BBE /* kocaelifest_portrait.png */,
+				63338D8489C04BAF9E25F86D /* konyafest_portrait.jpg */,
+				5A589214959041028683BB68 /* sakaryafest_portrait.jpg */,
+				EAD784B0A30C46AE8D3FBDE3 /* whatafest_portrait.png */,
+				0873FDD9B55D49199BDA3914 /* wolfest_portrait.png */,
+				DB608AE824834AB9B0E4F54F /* izmirfest_square.jpg */,
+				AF6E074AE1EC4E1DB556139A /* kocaelifest_square.png */,
+				51FFCC9A594F442B9067596D /* konyafest_square.jpg */,
+				173987EC34E643AA83BC420E /* sakaryafest_square.jpg */,
+				4FACBB9E65B94E7E89316FFB /* whatafest_square.png */,
+				6B3E231FD036402B8020D7B7 /* wolfest_square.png */,
+				6412F548F21D479BA8E41E37 /* babyshark_portrait.png */,
+				15237CB8DA2445C8967C69FE /* biruzayhayali_portrait.jpg */,
+				F70ACEBA872042D594CCC743 /* kucukprens_portrait.jpg */,
+				380B6064D17B4EFE81060B66 /* masakoca_portrait.png */,
+				86049F42B4524DDC9E9E66D3 /* babyshark_square.png */,
+				446380145A4D477E96B18F9E /* biruzayhayali_square.jpg */,
+				25AC1224DA874AF094FEB448 /* kucukprens_square.jpg */,
+				F700255A3EC4422291B3338E /* masakoca_square.png */,
+				4C8F1E1D76684A90861D37FA /* ankarastandup_portrait.jpg */,
+				1A3A140C4A9C44D29C8BC6B0 /* atademirelgazinosu_portrait.png */,
+				C23E2656929148239A6F6763 /* dogudemirkol_portrait.jpg */,
+				D2D211B7D5544274B489B96D /* ozgurturhan_portrait.png */,
+				D015452FCA954D7E89ABE677 /* tuzbiber_portrait.jpg */,
+				44ACC8CBE4774AC4AB95EF55 /* ankarastandup_square.jpg */,
+				B9A68579EACD4277AD249596 /* atademirelgazinosu_square.png */,
+				6277BA7EA5D245AD82302E2A /* dogudemirkol_square.jpg */,
+				9BF602B40D534B82B70817EF /* ozgurturhan_square.png */,
+				BBF012274D044F78A49633E2 /* tuzbiber_square.jpg */,
+				BC9D7424A06F46038252E512 /* istibdatkumpanyasi_portrait.jpg */,
+				BDB72238EABE42CCA39972EB /* vedaoyunu_portrait.jpeg */,
+				8C62772ABA11497792CFAE41 /* zenginmutfagi_portrait.png */,
+				5B2FDDF3915B43EBA8259CBD /* istibdatkumpanyasi_square.jpg */,
+				19C0F88EAB96451D9444314E /* vedaoyunu_square.jpeg */,
+				A0F82FE93AC5412585958E21 /* zenginmutfagi_square.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -243,6 +492,86 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D5E955D93FC04899A2A10EF9 /* app_icons.ttf in Resources */,
+				9CD6D1C5FE1145E6B5B3A49B /* Poppins-Black.ttf in Resources */,
+				32E26BBC715A4DADA89F963D /* Poppins-Bold.ttf in Resources */,
+				D79988F79C93468499150254 /* Poppins-ExtraBold.ttf in Resources */,
+				B3D155AF617A4CA2BA88F4D1 /* Poppins-ExtraLight.ttf in Resources */,
+				55F3459F746E489F9D1C7ADD /* Poppins-Light.ttf in Resources */,
+				693D2A14C77B4DB48F477920 /* Poppins-Medium.ttf in Resources */,
+				36CFA5E43E114399BE7378EB /* Poppins-Regular.ttf in Resources */,
+				95A5A50174B4468C82936DA9 /* Poppins-SemiBold.ttf in Resources */,
+				B57D14C8EF2B4E93AC9D9F4B /* Poppins-Thin.ttf in Resources */,
+				7870ED296FE9490FAD53E932 /* amazonpay.png in Resources */,
+				D802F4C81FC64E91B9CF830F /* applepay.png in Resources */,
+				E8F85E6E1A6E4273B5791958 /* avatar.jpeg in Resources */,
+				EB9C9553DCB744F999F28772 /* gpay.png in Resources */,
+				F2EDE530FAF94D31ACF0C807 /* mabelmatiz_portrait.png in Resources */,
+				9606D00793BD401F93B821CC /* mabelmatiz_square.png in Resources */,
+				CB64A64C79734A138EF0506C /* cappuccino_pic_1_portrait.png in Resources */,
+				56C431EB7F2842908A022ECF /* cappuccino_pic_2_portrait.png in Resources */,
+				58294084AC6D42E69A6CE728 /* cappuccino_pic_3_portrait.png in Resources */,
+				BA3168D94143442B948EE570 /* cappuccino_pic_1_square.png in Resources */,
+				C1EA1C10A8DC4A4C9A01D7CD /* cappuccino_pic_2_square.png in Resources */,
+				BCEA5AE5BC474B449AB3A99F /* cappuccino_pic_3_square.png in Resources */,
+				A38E7D8E8F60413DBB604BC1 /* espresso_pic_1_portrait.png in Resources */,
+				EB5F01EFF7044EB899708073 /* espresso_pic_2_portrait.png in Resources */,
+				71AD5C510139488D9B50AD8A /* espresso_pic_3_portrait.png in Resources */,
+				6FE118230EEC4D26BC9094DF /* espresso_pic_1_square.png in Resources */,
+				420A688BD1D14B5A86144CE6 /* espresso_pic_2_square.png in Resources */,
+				567455C33FE54C73B58BEB29 /* espresso_pic_3_square.png in Resources */,
+				90C4985B51474EA78DAF02A8 /* black_coffee_pic_1_portrait.png in Resources */,
+				7F76CD6556D4474988A6538E /* black_coffee_pic_2_portrait.png in Resources */,
+				240E95FAE7644A80ACFF3C45 /* black_coffee_pic_3_portrait.png in Resources */,
+				0B2A71C73D9644BAAE61A037 /* black_coffee_pic_1_square.png in Resources */,
+				F6839F33E7704C7C91F60D1E /* black_coffee_pic_2_square.png in Resources */,
+				619C687A726048599EE46FBF /* black_coffee_pic_3_square.png in Resources */,
+				68065BD07CA84B5F9386E4E9 /* afacanlarsirki_portrait.jpg in Resources */,
+				79C2FB55396844F59AC37A88 /* afacanlarsirki_square.jpg in Resources */,
+				4FA6520E7DBB4585BA07FD9E /* canozan_portrait.jpg in Resources */,
+				EADB5EBEE73940929D8FACDB /* gokhanturkmen_portrait.jpg in Resources */,
+				B86622D07EC749B684C52633 /* mazharfuat_portrait.png in Resources */,
+				48AE229312C3496F99ECF3AA /* melikesahin_portrait.png in Resources */,
+				51B277BF50644C2B8179E5FD /* canozan_square.jpg in Resources */,
+				334597E4D70B48708B461AD7 /* gokhanturkmen_square.jpg in Resources */,
+				724AB21BBD734FE09B816352 /* mazharfuat_square.png in Resources */,
+				6949855AA6F944B98400888D /* melikesahin_square.png in Resources */,
+				6DB16952C4254D87A45F3217 /* izmirfest_portrait.jpg in Resources */,
+				2D03231500484365B18A14A7 /* kocaelifest_portrait.png in Resources */,
+				A0F4DAD92F1E49A38A04B688 /* konyafest_portrait.jpg in Resources */,
+				25FB7BFF16634FA9B2A8953A /* sakaryafest_portrait.jpg in Resources */,
+				A3CD25521DE94977B068804D /* whatafest_portrait.png in Resources */,
+				236E62D1706A4EE5B26C1B4D /* wolfest_portrait.png in Resources */,
+				F76DABA9B87C430C8F1F92C6 /* izmirfest_square.jpg in Resources */,
+				155C24C45C564DC493C516EF /* kocaelifest_square.png in Resources */,
+				D359A3BB54E44B56B4DFF33E /* konyafest_square.jpg in Resources */,
+				CEEE74B16A0E4E6490EAE15F /* sakaryafest_square.jpg in Resources */,
+				DD1AAD06897B47E8B53B5C77 /* whatafest_square.png in Resources */,
+				4D9FE7CF90F249EBAD5780DE /* wolfest_square.png in Resources */,
+				B5AD87ACB5324367A5972E80 /* babyshark_portrait.png in Resources */,
+				4CAACE57A0D24241B5B8E13C /* biruzayhayali_portrait.jpg in Resources */,
+				69AD486C9613454C98DEA81A /* kucukprens_portrait.jpg in Resources */,
+				135DBF54EE764B25B3243A02 /* masakoca_portrait.png in Resources */,
+				52F053CBA85343338CD4A014 /* babyshark_square.png in Resources */,
+				1027C209D52640A3A35AE144 /* biruzayhayali_square.jpg in Resources */,
+				E1EE6A12FE174EBBBACCF684 /* kucukprens_square.jpg in Resources */,
+				D2E5AAC8F5094B5B9F5BF1DF /* masakoca_square.png in Resources */,
+				E51F901FB03F47D589BDC871 /* ankarastandup_portrait.jpg in Resources */,
+				A3ADBD728B184FC48CC0E15C /* atademirelgazinosu_portrait.png in Resources */,
+				F6AB236D8687416598DAFFAF /* dogudemirkol_portrait.jpg in Resources */,
+				8EB1CD395F8C4A99829555AB /* ozgurturhan_portrait.png in Resources */,
+				C2AFCE042FFE48318038DD71 /* tuzbiber_portrait.jpg in Resources */,
+				9F6CF6C8BCC54481AB7B9A25 /* ankarastandup_square.jpg in Resources */,
+				2AF0994656EB44128D6E3FFD /* atademirelgazinosu_square.png in Resources */,
+				A30604BBD52F4B2581B16C04 /* dogudemirkol_square.jpg in Resources */,
+				01693CA342594E71B413E249 /* ozgurturhan_square.png in Resources */,
+				43A6F324E1F7488CAE3E80F2 /* tuzbiber_square.jpg in Resources */,
+				87694CC5B81E49EEA6275180 /* istibdatkumpanyasi_portrait.jpg in Resources */,
+				28A294A0766F441E89C97782 /* vedaoyunu_portrait.jpeg in Resources */,
+				809D761907824541BEBBECC3 /* zenginmutfagi_portrait.png in Resources */,
+				6FCBCD4978AE4696B016CE38 /* istibdatkumpanyasi_square.jpg in Resources */,
+				D2A3220B592D4EE1BC8DFA21 /* vedaoyunu_square.jpeg in Resources */,
+				D45A7B016259467A9536F2FB /* zenginmutfagi_square.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

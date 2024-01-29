@@ -1,0 +1,325 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/app_images/amazonpay.png",
+      "sha1": "4ec7050dda251f228cb2b9a5220cc986099dd3c7"
+    },
+    {
+      "path": "src/assets/app_images/applepay.png",
+      "sha1": "0b06e72fa97134cda893f1688ab8852fef316f1f"
+    },
+    {
+      "path": "src/assets/app_images/avatar.jpeg",
+      "sha1": "1cbceabf698ce4a2ab8dc219e55bfb6add236293"
+    },
+    {
+      "path": "src/assets/app_images/gpay.png",
+      "sha1": "039fbff59306d5e4300ef7614d796844345575af"
+    },
+    {
+      "path": "src/assets/event_assets/concerts/portrait/canozan_portrait.jpg",
+      "sha1": "df02a1565f082c7a05b580793ead9521b7b0a260"
+    },
+    {
+      "path": "src/assets/event_assets/concerts/portrait/gokhanturkmen_portrait.jpg",
+      "sha1": "ac17c640afdbfd8fc6c1664165976c9e5bfa572a"
+    },
+    {
+      "path": "src/assets/event_assets/concerts/portrait/mabelmatiz_portrait.png",
+      "sha1": "2349083fe3b67e62e872e7ba75cbb57fdb21bed4"
+    },
+    {
+      "path": "src/assets/event_assets/concerts/portrait/mazharfuat_portrait.png",
+      "sha1": "735494fffed37876d63154ed26eea92edb44741e"
+    },
+    {
+      "path": "src/assets/event_assets/concerts/portrait/melikesahin_portrait.png",
+      "sha1": "cd1f10b6562a6becd93f9c912f2b58f7a3d883fb"
+    },
+    {
+      "path": "src/assets/event_assets/concerts/square/canozan_square.jpg",
+      "sha1": "1724a4edc0b715cfbb019f58ed90363bf5015126"
+    },
+    {
+      "path": "src/assets/event_assets/concerts/square/gokhanturkmen_square.jpg",
+      "sha1": "b937fbb58eb5a7c45848367d4820d3db313bcc15"
+    },
+    {
+      "path": "src/assets/event_assets/concerts/square/mabelmatiz_square.png",
+      "sha1": "c190fcc5dde9f9752a56502a3d55ab90276cc90e"
+    },
+    {
+      "path": "src/assets/event_assets/concerts/square/mazharfuat_square.png",
+      "sha1": "0900f8eeb2c429544bd82d44a642fba7d118badd"
+    },
+    {
+      "path": "src/assets/event_assets/concerts/square/melikesahin_square.png",
+      "sha1": "774c0e48cd087cb2b3e963ef4c4ad5fdeabaac31"
+    },
+    {
+      "path": "src/assets/event_assets/fests/portrait/cappuccino_pic_1_portrait.png",
+      "sha1": "f779a1ae66323767c0c0297f2c6de012cd5c8ea5"
+    },
+    {
+      "path": "src/assets/event_assets/fests/portrait/cappuccino_pic_2_portrait.png",
+      "sha1": "b112cd3b97bfb245e384f72992e288091c086cf6"
+    },
+    {
+      "path": "src/assets/event_assets/fests/portrait/cappuccino_pic_3_portrait.png",
+      "sha1": "dd8ac758166a523cacc521df589cd580eee249e3"
+    },
+    {
+      "path": "src/assets/event_assets/fests/portrait/izmirfest_portrait.jpg",
+      "sha1": "a3e50949a11c5b9763c52d40ce94d7b1dfb44329"
+    },
+    {
+      "path": "src/assets/event_assets/fests/portrait/kocaelifest_portrait.png",
+      "sha1": "c7c9a0df234103701062e428dae6602e2200c982"
+    },
+    {
+      "path": "src/assets/event_assets/fests/portrait/konyafest_portrait.jpg",
+      "sha1": "e9248be3a92caf61d9ea1557241acbc601c1407e"
+    },
+    {
+      "path": "src/assets/event_assets/fests/portrait/sakaryafest_portrait.jpg",
+      "sha1": "a2ddce8cbb7246f70a7e837f931f431813136be3"
+    },
+    {
+      "path": "src/assets/event_assets/fests/portrait/whatafest_portrait.png",
+      "sha1": "bba73b7b9728c6c45673dc50a0da5b3de41e5dbd"
+    },
+    {
+      "path": "src/assets/event_assets/fests/portrait/wolfest_portrait.png",
+      "sha1": "bb592d70259881607248560e0167150b8056def9"
+    },
+    {
+      "path": "src/assets/event_assets/fests/square/cappuccino_pic_1_square.png",
+      "sha1": "c5024b616a95aa2c92e4567c00fa262203bdf537"
+    },
+    {
+      "path": "src/assets/event_assets/fests/square/cappuccino_pic_2_square.png",
+      "sha1": "0b6bd08c07938581803903e17a27a9560b844aff"
+    },
+    {
+      "path": "src/assets/event_assets/fests/square/cappuccino_pic_3_square.png",
+      "sha1": "7a0435698649161f11e6be91656c7bc3d3f74715"
+    },
+    {
+      "path": "src/assets/event_assets/fests/square/izmirfest_square.jpg",
+      "sha1": "8d8fac21c5d41f6bacb3c85b951deddfbebce1ff"
+    },
+    {
+      "path": "src/assets/event_assets/fests/square/kocaelifest_square.png",
+      "sha1": "d7169b5edb55bd8e851cbbf4ebac7e7ce5b5413e"
+    },
+    {
+      "path": "src/assets/event_assets/fests/square/konyafest_square.jpg",
+      "sha1": "a3de5222ac8e514490844083fc1198892387ccd5"
+    },
+    {
+      "path": "src/assets/event_assets/fests/square/sakaryafest_square.jpg",
+      "sha1": "30abff8d7bd0ee455c5bbd35b779b4a01704a935"
+    },
+    {
+      "path": "src/assets/event_assets/fests/square/whatafest_square.png",
+      "sha1": "9d02beda19b4f9d35b9c5c2c9560a1440747ba27"
+    },
+    {
+      "path": "src/assets/event_assets/fests/square/wolfest_square.png",
+      "sha1": "d254a7987ca11a6b6a3e1edf7387db61985d3ffd"
+    },
+    {
+      "path": "src/assets/event_assets/kids/portrait/afacanlarsirki_portrait.jpg",
+      "sha1": "a90174efa2a49499e35e5fd7d20ad5beef9e8f3f"
+    },
+    {
+      "path": "src/assets/event_assets/kids/portrait/babyshark_portrait.png",
+      "sha1": "f29d778aa0f60ca132b01f09d6e28bc7e63407ad"
+    },
+    {
+      "path": "src/assets/event_assets/kids/portrait/biruzayhayali_portrait.jpg",
+      "sha1": "0b9298c19a68315d9a58e696f454b740f71f122d"
+    },
+    {
+      "path": "src/assets/event_assets/kids/portrait/kucukprens_portrait.jpg",
+      "sha1": "ef3119aee3c1fa4969cfaaa7d8bd5fd5429b71fc"
+    },
+    {
+      "path": "src/assets/event_assets/kids/portrait/masakoca_portrait.png",
+      "sha1": "d0b2a1a507dd0cb8348ba3e8f9647363749b719d"
+    },
+    {
+      "path": "src/assets/event_assets/kids/square/afacanlarsirki_square.jpg",
+      "sha1": "8300fce7396a2edfe0fc20e20451c52a203885e9"
+    },
+    {
+      "path": "src/assets/event_assets/kids/square/babyshark_square.png",
+      "sha1": "e27dfcfa0dd2ea13b44a296fd68e9a5109e9288d"
+    },
+    {
+      "path": "src/assets/event_assets/kids/square/biruzayhayali_square.jpg",
+      "sha1": "cf13af693817661a7a1fb2498e7d1d5c8663947b"
+    },
+    {
+      "path": "src/assets/event_assets/kids/square/kucukprens_square.jpg",
+      "sha1": "fd14c9dfb0dceac23978c99bcdf8d5979fdc819d"
+    },
+    {
+      "path": "src/assets/event_assets/kids/square/masakoca_square.png",
+      "sha1": "39ece5d076f6412d6375c6419e261b815a39b430"
+    },
+    {
+      "path": "src/assets/event_assets/standups/portrait/ankarastandup_portrait.jpg",
+      "sha1": "ee73d1ce6e22de4e577477800f33b2952045c7e5"
+    },
+    {
+      "path": "src/assets/event_assets/standups/portrait/atademirelgazinosu_portrait.png",
+      "sha1": "3f798fde9d1ce4e90927cb6f05b8651a4d7fed57"
+    },
+    {
+      "path": "src/assets/event_assets/standups/portrait/dogudemirkol_portrait.jpg",
+      "sha1": "65d07bbc1ed4f84a527977d0e931b33dd84f6eb3"
+    },
+    {
+      "path": "src/assets/event_assets/standups/portrait/espresso_pic_1_portrait.png",
+      "sha1": "61498f6756dc52c8360df69be36a392ccde9e690"
+    },
+    {
+      "path": "src/assets/event_assets/standups/portrait/espresso_pic_2_portrait.png",
+      "sha1": "a7d1cb7128b15df1e3dce4ea81607a37bbb0e1f6"
+    },
+    {
+      "path": "src/assets/event_assets/standups/portrait/espresso_pic_3_portrait.png",
+      "sha1": "436c50c217b2d7739cd6bb5aec54db175b210912"
+    },
+    {
+      "path": "src/assets/event_assets/standups/portrait/ozgurturhan_portrait.png",
+      "sha1": "52b170a2eb908638d84ca61b8a4b1f32b6c24a4c"
+    },
+    {
+      "path": "src/assets/event_assets/standups/portrait/tuzbiber_portrait.jpg",
+      "sha1": "62afc5410736e8e10f4bfea3409f3bb28e5c6537"
+    },
+    {
+      "path": "src/assets/event_assets/standups/square/ankarastandup_square.jpg",
+      "sha1": "81fb309f03787f7e11b74a197cb86cf0976bab91"
+    },
+    {
+      "path": "src/assets/event_assets/standups/square/atademirelgazinosu_square.png",
+      "sha1": "690bb1ad1923aa1697405859c85b670f39da39a1"
+    },
+    {
+      "path": "src/assets/event_assets/standups/square/dogudemirkol_square.jpg",
+      "sha1": "e6728073c3ad93307145dcddd8601e9a028dcbcb"
+    },
+    {
+      "path": "src/assets/event_assets/standups/square/espresso_pic_1_square.png",
+      "sha1": "3d26c8071b1b3121c2502a3dbc421db0e4f2a1f7"
+    },
+    {
+      "path": "src/assets/event_assets/standups/square/espresso_pic_2_square.png",
+      "sha1": "d8ccd27a3d6a1ca845478dfbed70f642f5d1d6bc"
+    },
+    {
+      "path": "src/assets/event_assets/standups/square/espresso_pic_3_square.png",
+      "sha1": "e0e35545410fbb2a19ca0def1fd47dcdd8c3b8a5"
+    },
+    {
+      "path": "src/assets/event_assets/standups/square/ozgurturhan_square.png",
+      "sha1": "a777ad36ec9287d97d2e7dd118d80a048bcd1808"
+    },
+    {
+      "path": "src/assets/event_assets/standups/square/tuzbiber_square.jpg",
+      "sha1": "4f34a142444fd7baf77455321702715d518c6669"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/portrait/black_coffee_pic_1_portrait.png",
+      "sha1": "8ad3aef75b17cfa2cf331c0a2627b6b86fbd7e68"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/portrait/black_coffee_pic_2_portrait.png",
+      "sha1": "45eca36530211ca5f391959ab78e6a065e9e38c7"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/portrait/black_coffee_pic_3_portrait.png",
+      "sha1": "80bf34874c6e91beffdf178fd411e4da605c5b1f"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/portrait/istibdatkumpanyasi_portrait.jpg",
+      "sha1": "49f53a59641762eb96a0f1246f0c73d459216af4"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/portrait/vedaoyunu_portrait.jpeg",
+      "sha1": "0d4d5fd8929f4aebf769a6a3acd73eaa301d74c7"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/portrait/zenginmutfagi_portrait.png",
+      "sha1": "1e5e705f1844ee32f211c6d87268076725dd2545"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/square/black_coffee_pic_1_square.png",
+      "sha1": "13962f4de82128e0284fdd4a17f35c26c15bef60"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/square/black_coffee_pic_2_square.png",
+      "sha1": "1be7ef6985aeff91f4aeadb237b71f1f6c1d4a8f"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/square/black_coffee_pic_3_square.png",
+      "sha1": "517bd167fa181c73075414bf49a3d74e519d866b"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/square/istibdatkumpanyasi_square.jpg",
+      "sha1": "8103ded33cfbc3b12bca686bed241f7856c395fe"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/square/vedaoyunu_square.jpeg",
+      "sha1": "a5a0bec1959f813002c6a7eebb918cceb11d115d"
+    },
+    {
+      "path": "src/assets/event_assets/theatres/square/zenginmutfagi_square.png",
+      "sha1": "f98c479a80e438aed970f352c874476d498e9136"
+    },
+    {
+      "path": "src/assets/fonts/app_icons.ttf",
+      "sha1": "18e5fe2f93c853bbb495975f04df56438d595de5"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Black.ttf",
+      "sha1": "645e04c53c6b5b35bce654a811ebce16af8aa721"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Bold.ttf",
+      "sha1": "875cf0cecd647bcf22e79d633d868c1b1ec98dfa"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-ExtraBold.ttf",
+      "sha1": "4b5c0750f073abd576413a0898d3b95adaf199c8"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-ExtraLight.ttf",
+      "sha1": "85af6582a7e6155917c605f9d3fed68c02b23b06"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Light.ttf",
+      "sha1": "e247a92158e112f8bf7b638c8d95381d66b00dbb"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Medium.ttf",
+      "sha1": "283f21b44efbdbf276ba802be2d949a36bbc4233"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Regular.ttf",
+      "sha1": "fdd3002e7d814ee47c1c1b8487c72c6bbb3a2d00"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "8a4ace9392d06bcb7f8ea2f5169b07e4c383a90d"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Thin.ttf",
+      "sha1": "09ba4dcd5509c8085bf88c665dcc51cbdfced27b"
+    }
+  ]
+}
