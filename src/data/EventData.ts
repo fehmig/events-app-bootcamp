@@ -1,4 +1,4 @@
-const CoffeeData = [
+const EventData = [
   {
     id: 'C1',
     name: 'Mabel Matiz',
@@ -13,9 +13,9 @@ const CoffeeData = [
     ingredients: 'Konser',
     special_ingredient: 'Ankara',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Balkon', price: '300', currency: '₺'},
+      {size: 'Sahne-1', price: '350', currency: '₺'},
+      {size: 'Sahne-2', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -29,8 +29,8 @@ const CoffeeData = [
     category:'Konser',
     description: `Müzik hayatına 13 yaşında eline aldığı klasik gitarla başlayan Can Ozan, "Sar Bu Şehri", "Aşk", "Hiç Kimsenin Günahı Yok", "Kalbimden Tenime" ve "Toprak Yağmura" gibi kariyerinin sevilen hitlerini hayranlarıyla söylemeye hazırlanıyor. `,
     roasted: 'Yenimahalle Nazım Hikmet Kültür Merkezi-Genco Erkal Sahnesi',
-    imagelink_square: require('../assets/event_assets/concerts/square/CanOzan_square.jpg'),
-    imagelink_portrait: require('../assets/event_assets/concerts/portrait/CanOzan_portrait.jpg'),
+    imagelink_square: require('../assets/event_assets/concerts/square/canozan_square.jpg'),
+    imagelink_portrait: require('../assets/event_assets/concerts/portrait/canozan_portrait.jpg'),
     ingredients: 'Akustik',
     special_ingredient: 'Ankara',
     prices: [
@@ -55,14 +55,14 @@ const CoffeeData = [
     Etkinlik alanına yiyecek, içecek alınmamaktadır. 
     Etkinlik alanına evcil hayvan kabul edilmemektedir.`,
     roasted: 'Yenimahalle Nazım Hikmet Kültür Merkezi-Genco Erkal Sahnesi',
-    imagelink_square: require('../assets/event_assets/concerts/square/GökhanTurkmen_square.jpg'),
-    imagelink_portrait: require('../assets/event_assets/concerts/portrait/GokhanTurkmen_portrait.jpg'),
+    imagelink_square: require('../assets/event_assets/concerts/square/gokhanturkmen_square.jpg'),
+    imagelink_portrait: require('../assets/event_assets/concerts/portrait/gokhanturkmen_portrait.jpg'),
     ingredients: 'Konser',
     special_ingredient: 'Ankara',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Balkon', price: '800', currency: '₺'},
+      {size: 'Sahne-1', price: '850', currency: '₺'},
+      {size: 'Sahne-2', price: '900', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -80,8 +80,8 @@ const CoffeeData = [
     Etkinlik alanına yiyecek, içecek alınmamaktadır. 
     Etkinlik alanına evcil hayvan kabul edilmemektedir.`,
     roasted: 'Congresium Ankara',
-    imagelink_square: require('../assets/event_assets/concerts/square/MazharFuat_square.png'),
-    imagelink_portrait: require('../assets/event_assets/concerts/portrait/MazharFuat_portrait.png'),
+    imagelink_square: require('../assets/event_assets/concerts/square/mazharfuat_square.png'),
+    imagelink_portrait: require('../assets/event_assets/concerts/portrait/mazharfuat_portrait.png'),
     ingredients: 'Konser',
     special_ingredient: 'Ankara',
     prices: [
@@ -101,14 +101,14 @@ const CoffeeData = [
     category:'Konser',
     description: `Melike Şahin, 14 Şubat Çarşamba akşamı Atlantis Yapım organizasyonu ile ATO Congresium’da Ankaralı sevenlerine unutulmayacak bir Sevgililer Günü yaşatacak!`,
     roasted: 'Congresium Ankara',
-    imagelink_square: require('../assets/event_assets/concerts/square/MelikeSahin_square.png'),
-    imagelink_portrait: require('../assets/event_assets/concerts/portrait/MelikeSahin_portrait.png'),
+    imagelink_square: require('../assets/event_assets/concerts/square/melikesahin_square.png'),
+    imagelink_portrait: require('../assets/event_assets/concerts/portrait/melikesahin_portrait.png'),
     ingredients: 'Konser',
     special_ingredient: 'Ankara',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Balkon', price: '750', currency: '₺'},
+      {size: 'Sahne-1', price: '800', currency: '₺'},
+      {size: 'Sahne-2', price: '850', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -147,8 +147,8 @@ const CoffeeData = [
     Yaş Sınırı: 16+
     Süre: 2 perde, 130 dk.`,
     roasted: 'Ankara Yeni Sahne',
-    imagelink_square: require('../assets/event_assets/theatres/square/İstibdatKumpası_square.jpg'),
-    imagelink_portrait: require('../assets/event_assets/theatres/portrait/İstibdatKumpası_portrait.jpg'),
+    imagelink_square: require('../assets/event_assets/theatres/square/istibdatkumpanyasi_square.jpg'),
+    imagelink_portrait: require('../assets/event_assets/theatres/portrait/istibdatkumpanyasi_portrait.jpg'),
     ingredients: 'Tiyatro',
     special_ingredient: 'Ankara',
     prices: [
@@ -174,8 +174,8 @@ const CoffeeData = [
     
     Hizmet etmekten başka bir şey düşünemeyen köşk çalışanları da gözlerinin önünde gelişen olaylar karşısında kayıtsız kalamayacaktır. Toplumdaki değişimden her biri kendi payına düşeni alacaktır.os are a classic Italian type of coffee drink made of espresso, steamed milk, and thick foam in equal parts. The name comes from the resemblance to the hoods worn by Capuchin monks. Making cappuccino is relatively easy and can be done at home too if you know how to make espresso.`,
     roasted: 'Congresium Ankara',
-    imagelink_square: require('../assets/event_assets/theatres/square/ZenginMutfağı_square.png'),
-    imagelink_portrait: require('../assets/event_assets/theatres/portrait/ZenginMutfağı_portrait.png'),
+    imagelink_square: require('../assets/event_assets/theatres/square/zenginmutfagi_square.png'),
+    imagelink_portrait: require('../assets/event_assets/theatres/portrait/zenginmutfagi_portrait.png'),
     ingredients: 'Tiyatro',
     special_ingredient: 'Ankara',
     prices: [
@@ -199,8 +199,8 @@ const CoffeeData = [
     
     "Her veda bir başlangıçtır" diyerek yola çıkılan Veda, sancılı  bir tarihsel döngü hikayesi, umut dolu bir insanlık öyküsü!`,
     roasted: 'MEB Şura Salonu',
-    imagelink_square: require('../assets/event_assets/theatres/square/VedaOyunu_square.jpeg'),
-    imagelink_portrait: require('../assets/event_assets/theatres/portrait/VedaOyunu_portrait.jpeg'),
+    imagelink_square: require('../assets/event_assets/theatres/square/vedaoyunu_square.jpeg'),
+    imagelink_portrait: require('../assets/event_assets/theatres/portrait/vedaoyunu_portrait.jpeg'),
     ingredients: 'Tiyatro',
     special_ingredient: 'Ankara',
     prices: [
@@ -232,8 +232,8 @@ const CoffeeData = [
     
     Daha fazlası için takipte kal!`,
     roasted: 'Fuar İzmir',
-    imagelink_square: require('../assets/event_assets/fests/square/İzmirTattooFest_square.jpg'),
-    imagelink_portrait: require('../assets/event_assets/fests/portrait/İzmirTattooFest_portrait.jpg'),
+    imagelink_square: require('../assets/event_assets/fests/square/izmirfest_square.jpg'),
+    imagelink_portrait: require('../assets/event_assets/fests/portrait/izmirfest_portrait.jpg'),
     ingredients: 'Festival',
     special_ingredient: 'İzmir',
     prices: [
@@ -253,8 +253,8 @@ const CoffeeData = [
     category:'Festival',
     description: `Kocaeli'nde müziğin sesini biraz daha yükseltiyoruz. Müziğin büyülü dünyası, enfes lezzetlerle buluşuyor ve renkli oyun alanlarıyla birleşiyor! Bu yıl Kocaeli Müzik Festivali ile müzikseverler unutulmaz anlara tanıklık edecekler. Festivalimiz, en sevilen sanatçıların sahne alacağı, enerji dolu performanslarla dolu unutulmaz bir deneyim sunmaya hazırlanıyor.`,
     roasted: 'Emex Otel Kocaeli ',
-    imagelink_square: require('../assets/event_assets/fests/square/KocaeliFest_square.png'),
-    imagelink_portrait: require('../assets/event_assets/fests/portrait/KocaeliFest_portrait.png'),
+    imagelink_square: require('../assets/event_assets/fests/square/kocaelifest_square.png'),
+    imagelink_portrait: require('../assets/event_assets/fests/portrait/kocaelifest_portrait.png'),
     ingredients: 'Festival',
     special_ingredient: 'Kocaeli',
     prices: [
@@ -274,8 +274,8 @@ const CoffeeData = [
     category:'Festival',
     description: `Bu yıl ikinci kez düzenlenecek olan Konya Müzik Festivali, 3 gün boyunca çeşitli etkinlikler, birbirinden eşsiz sahne performansları ile Grand Hotel’de tüm müzikseverler ile buluşuyor.`,
     roasted: 'Grand Hotel Konya',
-    imagelink_square: require('../assets/event_assets/fests/square/KonyaFest_square.jpg'),
-    imagelink_portrait: require('../assets/event_assets/fests/portrait/KonyaFest_portrait.jpg'),
+    imagelink_square: require('../assets/event_assets/fests/square/konyafest_square.jpg'),
+    imagelink_portrait: require('../assets/event_assets/fests/portrait/konyafest_portrait.jpg'),
     ingredients: 'Festival',
     special_ingredient: 'Konya',
     prices: [
@@ -295,8 +295,8 @@ const CoffeeData = [
     category:'Festival',
     description: `Bu yıl üçüncü kez düzenlenecek olan Sakarya Müzik Festivali, 3 gün boyunca çeşitli etkinlikler, birbirinden eşsiz sahne performansları ile Del Lago Hotel’de tüm müzikseverler ile buluşuyor.`,
     roasted: 'Del Lago Luxury Hotel',
-    imagelink_square: require('../assets/event_assets/fests/square/SakaryaFest_square.jpg'),
-    imagelink_portrait: require('../assets/event_assets/fests/portrait/SakaryaFest_portrait.jpg'),
+    imagelink_square: require('../assets/event_assets/fests/square/sakaryafest_square.jpg'),
+    imagelink_portrait: require('../assets/event_assets/fests/portrait/sakaryafest_portrait.jpg'),
     ingredients: 'Festival',
     special_ingredient: 'Sakarya',
     prices: [
@@ -320,8 +320,8 @@ const CoffeeData = [
     
     Sanatçılar ve detaylar yakında!`,
     roasted: 'Foça Sahili',
-    imagelink_square: require('../assets/event_assets/fests/square/WhatAFest_square.png'),
-    imagelink_portrait: require('../assets/event_assets/fests/portrait/WhatAFest_portrait.png'),
+    imagelink_square: require('../assets/event_assets/fests/square/whatafest_square.png'),
+    imagelink_portrait: require('../assets/event_assets/fests/portrait/whatafest_portrait.png'),
     ingredients: 'Festival',
     special_ingredient: 'İzmir',
     prices: [
@@ -341,8 +341,8 @@ const CoffeeData = [
     category:'Stand-Up',
     description: `Aralarında BKM Mutfak'ta da sahne alan komedyenlerin bulunduğu dört komedyenin birbirinden farklı hikayelerine şahitlik edeceğiz eğlence dolu Stand up gecesi!`,
     roasted: 'Berlin Cafe Pub',
-    imagelink_square: require('../assets/event_assets/standups/square/AnkaraStandUp_square.jpg'),
-    imagelink_portrait: require('../assets/event_assets/standups/portrait/AnkaraStandUp_portrait.jpg'),
+    imagelink_square: require('../assets/event_assets/standups/square/ankarastandup_square.jpg'),
+    imagelink_portrait: require('../assets/event_assets/standups/portrait/ankarastandup_portrait.jpg'),
     ingredients: 'Stand-Up',
     special_ingredient: 'Ankara',
     prices: [
@@ -364,8 +364,8 @@ const CoffeeData = [
 
     Detaylar yakında!`,
     roasted: 'Kocaeli Seyrek Plajı / Patagonya World',
-    imagelink_square: require('../assets/event_assets/fests/square/Wolfest_square.png'),
-    imagelink_portrait: require('../assets/event_assets/fests/portrait/Wolfest_portrait.png'),
+    imagelink_square: require('../assets/event_assets/fests/square/wolfest_square.png'),
+    imagelink_portrait: require('../assets/event_assets/fests/portrait/wolfest_portrait.png'),
     ingredients: 'Festival',
     special_ingredient: 'Kocaeli',
     prices: [
@@ -387,8 +387,8 @@ const CoffeeData = [
 
     Türkiye, Avrupa ve Amerika’da ve dünyanın farklı şehirlerinde gerçekleştirdiği tek kişilik gösterisinde kendi yaşamından ve bu topraklarda güldürü niteliği taşıyan her olaydan beslenen Doğu Demirkol, bu sezon da seyircisi ile buluşmaya hazırlanıyor. `,
     roasted: 'Yenimahalle Nazım Hikmet Kültür Merkezi-Genco Erkal Sahnesi',
-    imagelink_square: require('../assets/event_assets/standups/square/DoguDemirkol_square.jpg'),
-    imagelink_portrait: require('../assets/event_assets/standups/portrait/DoguDemirkol_portrait.jpg'),
+    imagelink_square: require('../assets/event_assets/standups/square/dogudemirkol_square.jpg'),
+    imagelink_portrait: require('../assets/event_assets/standups/portrait/dogudemirkol_portrait.jpg'),
     ingredients: 'Stand Up',
     special_ingredient: 'Ankara',
     prices: [
@@ -410,8 +410,8 @@ const CoffeeData = [
 
     İşini şansa bırakmak istemiyorsan acele et, Baby Shark Live Show’da sen de yerini al!`,
     roasted: 'MEB Şura Salonu',
-    imagelink_square: require('../assets/event_assets/kids/square/BabyShark_square.png'),
-    imagelink_portrait: require('../assets/event_assets/kids/portrait/BabyShark_portrait.png'),
+    imagelink_square: require('../assets/event_assets/kids/square/babyshark_square.png'),
+    imagelink_portrait: require('../assets/event_assets/kids/portrait/babyshark_portrait.png'),
     ingredients: 'Çocuk',
     special_ingredient: 'Ankara',
     prices: [
@@ -451,8 +451,8 @@ const CoffeeData = [
     Işık Tasarım: Veli KARATAŞ
     Afiş Tasarım: Mehmet Selim ÖZBAN`,
     roasted: 'Çankaya Belediyesi Yaşar Kemal Kültür Merkezi',
-    imagelink_square: require('../assets/event_assets/kids/square/BirUzayHayali_square.jpg'),
-    imagelink_portrait: require('../assets/event_assets/kids/portrait/BirUzayHayali_portrait.jpg'),
+    imagelink_square: require('../assets/event_assets/kids/square/biruzayhayali_square.jpg'),
+    imagelink_portrait: require('../assets/event_assets/kids/portrait/biruzayhayali_portrait.jpg'),
     ingredients: 'Çocuk',
     special_ingredient: 'Ankara',
     prices: [
@@ -467,4 +467,4 @@ const CoffeeData = [
     index: 17,
   },
 ];
-export default CoffeeData;
+export default EventData;
