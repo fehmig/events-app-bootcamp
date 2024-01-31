@@ -77,6 +77,7 @@ const DetailsScreen = ({navigation, route}: any) => {
           id={ItemOfIndex.id}
           favourite={ItemOfIndex.favourite}
           name={ItemOfIndex.name}
+          date={ItemOfIndex.date}
           special_ingredient={ItemOfIndex.special_ingredient}
           ingredients={ItemOfIndex.ingredients}
           average_rating={ItemOfIndex.average_rating}

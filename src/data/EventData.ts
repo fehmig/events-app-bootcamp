@@ -3,6 +3,7 @@ const EventData = [
     id: 'C1',
     name: 'Mabel Matiz',
     category:'Konser',
+    date:'08-03-2024',
     description: `Mabel Matiz, 8 Mart Cuma ve 9 Mart Cumartesi akşamı Atlantis Yapım organizasyonu ile en sevilen şarkılarını ATO Congresium’da Ankaralı sevenleriyle buluşturuyor! 6 yaş altı katılımcılar alana alınmamaktadır. Her katılımcı bilete tabiidir. 
     Etkinlik başladıktan sonra gelen seyircilerimizin satın almış oldukları koltuğa oturamama durumundan Bubilet ve Organizatör sorumlu değildir. Organizatör firma ve Bubilet geç kalan misafirler için koltuk garantisi vermez. Bu sebeple etkinliğe konser saatinden önce gelmenizi önemle rica ederiz. 
     Etkinlik alanına giriş yapan katılımcıların alandan çıkış yapmaları halinde yeni bilet satın almaları gerekecektir.   
@@ -13,9 +14,9 @@ const EventData = [
     ingredients: 'Konser',
     special_ingredient: 'Ankara',
     prices: [
-      {size: 'Balkon', price: '300', currency: '₺'},
-      {size: 'Sahne-1', price: '350', currency: '₺'},
-      {size: 'Sahne-2', price: '400', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -27,6 +28,7 @@ const EventData = [
     id: 'C2',
     name: 'Can Ozan',
     category:'Konser',
+    date:'22-02-2024',
     description: `Müzik hayatına 13 yaşında eline aldığı klasik gitarla başlayan Can Ozan, "Sar Bu Şehri", "Aşk", "Hiç Kimsenin Günahı Yok", "Kalbimden Tenime" ve "Toprak Yağmura" gibi kariyerinin sevilen hitlerini hayranlarıyla söylemeye hazırlanıyor. `,
     roasted: 'Yenimahalle Nazım Hikmet Kültür Merkezi-Genco Erkal Sahnesi',
     imagelink_square: require('../assets/event_assets/concerts/square/canozan_square.jpg'),
@@ -34,9 +36,9 @@ const EventData = [
     ingredients: 'Akustik',
     special_ingredient: 'Ankara',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -48,6 +50,7 @@ const EventData = [
     id: 'C3',
     name: 'Gökhan Türkmen',
     category:'Konser',
+    date:'11-02-2024',
     description: `Gökhan Türkmen en sevilen parçalarıyla  sizlerle buluşuyor. Etkinlik başladıktan sonra gelen seyircilerimizin satın almış oldukları koltuğa oturamama durumundan Bubilet ve Organizatör sorumlu değildir. Organizatör firma ve Bubilet geç kalan misafirler için koltuk garantisi vermez. Bu sebeple etkinliğe konser saatinden önce gelmenizi önemle rica ederiz. 
     Etkinlik alanına giriş yapan katılımcıların alandan çıkış yapmaları halinde yeni bilet satın almaları gerekecektir.   
     Etkinlik biletleri sadece organizasyon sahibi tarafından belirlenen resmi satış noktalarından alınmalıdır. Organizasyon sahibi resmi satış noktalarından alınmayan biletlerin sahiplerini etkinlik alanına almama hakkına sahiptir.  
@@ -60,9 +63,9 @@ const EventData = [
     ingredients: 'Konser',
     special_ingredient: 'Ankara',
     prices: [
-      {size: 'Balkon', price: '800', currency: '₺'},
-      {size: 'Sahne-1', price: '850', currency: '₺'},
-      {size: 'Sahne-2', price: '900', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -74,6 +77,7 @@ const EventData = [
     id: 'C4',
     name: 'Mazhar&Fuat',
     category:'Konser',
+    date:'25-02-2024',
     description: `Mazhar Alanson ve Fuat Güner 25 Şubat Pazar akşamı Atlantis Yapım organizasyonu ile ATO Congresium'da!  Etkinlik alanına giriş yapan katılımcıların alandan çıkış yapmaları halinde yeni bilet satın almaları gerekecektir.   
     Etkinlik biletleri sadece organizasyon sahibi tarafından belirlenen resmi satış noktalarından alınmalıdır. Organizasyon sahibi resmi satış noktalarından alınmayan biletlerin sahiplerini etkinlik alanına almama hakkına sahiptir.  
     Organizasyon sahibi etkinlik bilet bedelini iade etmek koşuluyla uygun görmedikleri kişiyi etkinlik alanına almama hakkına sahiptir. 
@@ -85,9 +89,9 @@ const EventData = [
     ingredients: 'Konser',
     special_ingredient: 'Ankara',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -99,6 +103,7 @@ const EventData = [
     id: 'C5',
     name: 'Melike Şahin',
     category:'Konser',
+    date:'14-02-2024',
     description: `Melike Şahin, 14 Şubat Çarşamba akşamı Atlantis Yapım organizasyonu ile ATO Congresium’da Ankaralı sevenlerine unutulmayacak bir Sevgililer Günü yaşatacak!`,
     roasted: 'Congresium Ankara',
     imagelink_square: require('../assets/event_assets/concerts/square/melikesahin_square.png'),
@@ -106,9 +111,9 @@ const EventData = [
     ingredients: 'Konser',
     special_ingredient: 'Ankara',
     prices: [
-      {size: 'Balkon', price: '750', currency: '₺'},
-      {size: 'Sahne-1', price: '800', currency: '₺'},
-      {size: 'Sahne-2', price: '850', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -120,6 +125,7 @@ const EventData = [
     id: 'C6',
     name: 'İstibdat Kumpanyası',
     category:'Tiyatro',
+    date:'21-02-2024',
     description: `ANKARA YENİ SAHNE'NİN YAPIMIYLA
 
     İSTİBDAT KUMPANYASI
@@ -166,6 +172,7 @@ const EventData = [
     id: 'C7',
     name: 'Zengin Mutfağı',
     category:'Tiyatro',
+    date:'22-02-2024',
     description: `Şener Şen, DasDas prodüksiyonu olan Zengin Mutfağı’nda sahnelediği muhteşem performansıyla Türkiye turnesinde!
 
     İstanbul, Denizli, İzmir, Bursa, Antalya ve Adana’da seyirciyle buluşacak olan Zengin Mutfağı Türkiye’yi şehir şehir dolaşacak.
@@ -193,6 +200,7 @@ const EventData = [
     id: 'C8',
     name: 'Veda Oyunu',
     category:'Tiyatro',
+    date:'24-02-2024',
     description: `Ayşe Kulin'in sevilen romanı Veda, Nedim Saban imzasıyla tiyatro sahnesinde!
 
     Milli mücadele yıllarında İstanbul'daki bir konakta yaşanan acı, tatlı olayları anlatan oyun gerçek hayatta yaşanmış olaylar üzerine kurulu! Tiyatrokare'nin uzun süredir üzerinde çalıştığı Veda'da Nevra Serezli, renkli bir deli saraylı kompozisyonu ile öne çıkıyor! Aziz Sarvan'ın, Kulin'in Osmanlının son maliye nazırı olan dedesini, Leyla Feray'ın bir yasak aşkın kahramınını, Fatih Gülnar'ın Cumhuriyet aydınını canlandırdığı oyunda diğer rollerde Meral Asiltürk, Alişan Özkan, Zeynep Sevi Yılmaz, Gizemnur Topaloğlu, Gizem Çayhanoğlu var!
@@ -218,6 +226,7 @@ const EventData = [
     id: 'C9',
     name: 'İzmir Tattoo Fest',
     category:'Festival',
+    date:'08-03-2024',
     description: `Özgünlüğü ve sanatı seviyorsan Türkiye'nin en büyük dövme festivali İzmir Tattoo Fest tam sana göre! 3 gün sürecek festival boyunca dünyanın her yerinden dövme sanatçılarıyla tanış, dövme yaptır, konserlere katıl, sanatla ve eğlenceyle dolu unutulmaz anlar yaşa! 
 
     8 Mart
@@ -237,9 +246,9 @@ const EventData = [
     ingredients: 'Festival',
     special_ingredient: 'İzmir',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -250,6 +259,7 @@ const EventData = [
   {
     id: 'C10',
     name: 'Kocaeli Müzik Fest',
+    date:'28-02-2024',
     category:'Festival',
     description: `Kocaeli'nde müziğin sesini biraz daha yükseltiyoruz. Müziğin büyülü dünyası, enfes lezzetlerle buluşuyor ve renkli oyun alanlarıyla birleşiyor! Bu yıl Kocaeli Müzik Festivali ile müzikseverler unutulmaz anlara tanıklık edecekler. Festivalimiz, en sevilen sanatçıların sahne alacağı, enerji dolu performanslarla dolu unutulmaz bir deneyim sunmaya hazırlanıyor.`,
     roasted: 'Emex Otel Kocaeli ',
@@ -258,9 +268,9 @@ const EventData = [
     ingredients: 'Festival',
     special_ingredient: 'Kocaeli',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -272,6 +282,7 @@ const EventData = [
     id: 'C11',
     name: 'Konya Müzik Fest',
     category:'Festival',
+    date:'20-02-2024',
     description: `Bu yıl ikinci kez düzenlenecek olan Konya Müzik Festivali, 3 gün boyunca çeşitli etkinlikler, birbirinden eşsiz sahne performansları ile Grand Hotel’de tüm müzikseverler ile buluşuyor.`,
     roasted: 'Grand Hotel Konya',
     imagelink_square: require('../assets/event_assets/fests/square/konyafest_square.jpg'),
@@ -279,9 +290,9 @@ const EventData = [
     ingredients: 'Festival',
     special_ingredient: 'Konya',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -293,6 +304,7 @@ const EventData = [
     id: 'C12',
     name: 'Sakarya Fest',
     category:'Festival',
+    date:'25-02-2024',
     description: `Bu yıl üçüncü kez düzenlenecek olan Sakarya Müzik Festivali, 3 gün boyunca çeşitli etkinlikler, birbirinden eşsiz sahne performansları ile Del Lago Hotel’de tüm müzikseverler ile buluşuyor.`,
     roasted: 'Del Lago Luxury Hotel',
     imagelink_square: require('../assets/event_assets/fests/square/sakaryafest_square.jpg'),
@@ -300,9 +312,9 @@ const EventData = [
     ingredients: 'Festival',
     special_ingredient: 'Sakarya',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -314,6 +326,7 @@ const EventData = [
     id: 'C13',
     name: 'What A Fest',
     category:'Festival',
+    date:'04-03-2024',
     description: `Güzel haberler ansızın gelir! Deniz, konser ve sınırsız eğlence What A Fest’te! WAF 22-25 Ağustos’ta Foça Acar Camping’te!
 
     Büyük Ev Ablukada
@@ -325,9 +338,9 @@ const EventData = [
     ingredients: 'Festival',
     special_ingredient: 'İzmir',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -339,6 +352,7 @@ const EventData = [
     id: 'C14',
     name: 'Ankara Stand-Up Gecesi',
     category:'Stand-Up',
+    date:'05-03-2024',
     description: `Aralarında BKM Mutfak'ta da sahne alan komedyenlerin bulunduğu dört komedyenin birbirinden farklı hikayelerine şahitlik edeceğiz eğlence dolu Stand up gecesi!`,
     roasted: 'Berlin Cafe Pub',
     imagelink_square: require('../assets/event_assets/standups/square/ankarastandup_square.jpg'),
@@ -360,6 +374,7 @@ const EventData = [
     id: 'C15',
     name: 'Wolfest',
     category:'Festival',
+    date:'31-05-2024',
     description: `Doğa sporları ve iyi müziği bir araya getiren WOLFEST’24, 31 Mayıs 1 – 2 Haziran 2024 tarihlerinde Jack Wolfskin ana sponsorluğunda mavi bayraklı plajıyla dikkat çeken Patagonya World Seyrek Plajı / Kandıra / Kocaeli’nde gerçekleştiriliyor.
 
     Detaylar yakında!`,
@@ -369,9 +384,9 @@ const EventData = [
     ingredients: 'Festival',
     special_ingredient: 'Kocaeli',
     prices: [
-      {size: 'Balkon', price: '250', currency: '₺'},
-      {size: 'Sahne-1', price: '300', currency: '₺'},
-      {size: 'Sahne-2', price: '350', currency: '₺'},
+      {size: 'Sahne Önü', price: '300', currency: '₺'},
+      {size: 'Ayakta Normal', price: '350', currency: '₺'},
+      {size: 'VIP', price: '400', currency: '₺'},
     ],
     average_rating: 4.7,
     ratings_count: '6,879',
@@ -382,7 +397,8 @@ const EventData = [
   {
     id: 'C16',
     name: 'Doğu Demirkol',
-    category:'Stand Up',
+    category:'Stand-Up',
+    date:'04-03-2024',
     description: `Stand up gösterisini kapalı gişe oynayan Ahlat Ağacı, Ölümlü Dünya, Bayi Toplantısı filmlerindeki başarılı performansının ardından,  ‘Doğu’ dizisinin ilk sezonunun çekimlerini tamamlayan komedyen sevenleriyle buluşmaya hazırlanıyor. 
 
     Türkiye, Avrupa ve Amerika’da ve dünyanın farklı şehirlerinde gerçekleştirdiği tek kişilik gösterisinde kendi yaşamından ve bu topraklarda güldürü niteliği taşıyan her olaydan beslenen Doğu Demirkol, bu sezon da seyircisi ile buluşmaya hazırlanıyor. `,
@@ -404,8 +420,9 @@ const EventData = [
   },
   {
     id: 'C17',
-    name: 'Pinkfong Baby Shark Ödül Töreni Oyunu',
+    name: 'Pinkfong Baby Shark',
     category:'Çocuk',
+    date:'28-02-2024',
     description: `Okyanusun en önemli gününde Shark ailesi çok mutlu ve gururludur. Muhteşem bir kutlama için herşey hazırdır. Hiç beklenmedik bir anda ortaya çıkan bir sorun Baby Shark ve onun süpriz arkadaşlarının çabalarıyla çözülecektir. Müzik ve dansların hiç kesilmediği bu kutlamalarda yerlerini alan herkes Baby Shark ve ailesiyle tanışıp çok eğlenecektir.
 
     İşini şansa bırakmak istemiyorsan acele et, Baby Shark Live Show’da sen de yerini al!`,
@@ -428,6 +445,7 @@ const EventData = [
   {
     id: 'C18',
     name: 'Bir Uzay Hayali Oyunu',
+    date:'31-05-2024',
     category:'Çocuk',
     description: `"Aselsan ve Krom Sanat iş birliğinde, Eda ve Mete’nin macerasına ortak olun."
 

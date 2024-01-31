@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, { useRef, useState } from 'react';
 import {
   ScrollView,
   StatusBar,
@@ -8,9 +8,10 @@ import {
   TouchableOpacity,
   View,
   ToastAndroid,
+  Modal,
 } from 'react-native';
-import {useStore} from '../store/store';
-import {useBottomTabBarHeight} from '@react-navigation/bottom-tabs';
+import { useStore } from '../store/store';
+import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
 import {
   BORDERRADIUS,
   COLORS,
@@ -20,12 +21,10 @@ import {
 } from '../theme/theme';
 import HeaderBar from '../components/HeaderBar';
 import CustomIcon from '../components/CustomIcon';
-import {FlatList} from 'react-native';
+import { FlatList } from 'react-native';
 import CoffeeCard from '../components/CoffeeCard';
-import {Dimensions} from 'react-native';
+import { Dimensions } from 'react-native';
 import SwiperFlatListComponent from '../components/SliderComponent';
-
-
 
 const getCategoriesFromData = (data: any) => {
   let temp: any = {};
@@ -50,10 +49,30 @@ const getEventList = (category: string, data: any) => {
   }
 };
 
-const HomeScreen = ({navigation}: any) => {
+const HomeScreen = ({ navigation }: any) => {
   const EventList = useStore((state: any) => state.EventList);
   const addToCart = useStore((state: any) => state.addToCart);
   const calculateCartPrice = useStore((state: any) => state.calculateCartPrice);
+
+  const getDatesFromData = (data: any) => {
+    let temp: any = {};
+    for (let i = 0; i < data.length; i++) {
+      if (temp[data[i].date] == undefined) {
+        temp[data[i].date] = 1;
+      } else {
+        temp[data[i].date]++;
+      }
+    }
+    let dates= Object.keys(temp);
+    return dates;
+  }; 
+
+  const [dates, setDates] = useState(getDatesFromData(EventList));
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   const [categories, setCategories] = useState(
     getCategoriesFromData(EventList),
@@ -63,20 +82,39 @@ const HomeScreen = ({navigation}: any) => {
     index: 0,
     category: categories[0],
   });
+  
   const [sortedEvent, setSortedEvent] = useState(
     getEventList(categoryIndex.category, EventList),
   );
 
   const ListRef: any = useRef<FlatList>();
   const tabBarHeight = useBottomTabBarHeight();
- 
+
+  const handleDatePress = (selectedDate: string) => {
+    // Seçilen tarihe göre etkinlikleri güncelle
+    const eventsForSelectedDate = EventList.filter((item: { date: string; }) => item.date === selectedDate);
+    setSortedEvent(eventsForSelectedDate);
+  
+    // Menüyü kapat
+    toggleMenu();
+  };
+
+  const handleCategoryChange = (selectedCategory: string) => {
+    // Kategori değiştiğinde tarihleri güncelle
+    const filteredEventList = getEventList(selectedCategory, EventList);
+    setSortedEvent(filteredEventList);
+    const filteredDates = getDatesFromData(filteredEventList);
+    setDates(filteredDates);
+    setCategoryIndex({ index: categories.indexOf(selectedCategory), category: selectedCategory });
+  };
+
   const searchCoffee = (search: string) => {
     if (search != '') {
       ListRef?.current?.scrollToOffset({
         animated: true,
         offset: 0,
       });
-      setCategoryIndex({index: 0, category: categories[0]});
+      setCategoryIndex({ index: 0, category: categories[0] });
       setSortedEvent([
         ...EventList.filter((item: any) =>
           item.name.toLowerCase().includes(search.toLowerCase()),
@@ -90,7 +128,7 @@ const HomeScreen = ({navigation}: any) => {
       animated: true,
       offset: 0,
     });
-    setCategoryIndex({index: 0, category: categories[0]});
+    setCategoryIndex({ index: 0, category: categories[0] });
     setSortedEvent([...EventList]);
     setSearchText('');
   };
@@ -133,10 +171,10 @@ const HomeScreen = ({navigation}: any) => {
         <HeaderBar />
 
         <Text style={styles.ScreenTitle}>
-        Hayatınızı Renklendirin,{'\n'}Etkinliklerle Dolu Bir Dünya!
+          Hayatınızı Renklendirin,{'\n'}Etkinliklerle Dolu Bir Dünya!
         </Text>
 
-      <SwiperFlatListComponent  />
+        <SwiperFlatListComponent />
 
         {/* Search Input */}
 
@@ -159,7 +197,7 @@ const HomeScreen = ({navigation}: any) => {
           <TextInput
             placeholder="Etkinlik ara..."
             value={searchText}
-            onChangeText={text => {
+            onChangeText={(text) => {
               setSearchText(text);
               searchCoffee(text);
             }}
@@ -189,27 +227,47 @@ const HomeScreen = ({navigation}: any) => {
           horizontal
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.CategoryScrollViewStyle}>
+           <TouchableOpacity onPress={toggleMenu}>
+        <CustomIcon
+          name="add"
+          size={FONTSIZE.size_18}
+          color={COLORS.primaryOrangeHex}
+        />
+      </TouchableOpacity>
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={showMenu}
+        onRequestClose={() => {
+          setShowMenu(!showMenu);
+        }}
+      >
+        <View style={styles.menuContainer}>
+          <TouchableOpacity onPress={toggleMenu} style={styles.closeButton}>
+            <Text style={styles.closeButtonText}><CustomIcon name='close' color={COLORS.primaryDarkGreyHex}/></Text>
+          </TouchableOpacity>
+          <ScrollView style={styles.menu}>
+            {dates.map((date, index) => (
+              <TouchableOpacity key={index} style={styles.menuItem}  onPress={() => handleDatePress(date)}>
+                <Text style={styles.DateText}>{date}</Text>
+              </TouchableOpacity>
+            ))}
+          </ScrollView>
+        </View>
+      </Modal>
+
           {categories.map((data, index) => (
             <View
               key={index.toString()}
               style={styles.CategoryScrollViewContainer}>
               <TouchableOpacity
                 style={styles.CategoryScrollViewItem}
-                onPress={() => {
-                  ListRef?.current?.scrollToOffset({
-                    animated: true,
-                    offset: 0,
-                  });
-                  setCategoryIndex({index: index, category: categories[index]});
-                  setSortedEvent([
-                    ...getEventList(categories[index], EventList),
-                  ]);
-                }}>
+                onPress={() => handleCategoryChange(data)}>
                 <Text
                   style={[
                     styles.CategoryText,
                     categoryIndex.index == index
-                      ? {color: COLORS.primaryOrangeHex}
+                      ? { color: COLORS.primaryOrangeHex }
                       : {},
                   ]}>
                   {data}
@@ -231,14 +289,14 @@ const HomeScreen = ({navigation}: any) => {
           horizontal
           ListEmptyComponent={
             <View style={styles.EmptyListContainer}>
-              <Text style={styles.CategoryText}>No Coffee Available</Text>
+              <Text style={styles.CategoryText}>Etkinlik Bulunamadı</Text>
             </View>
           }
           showsHorizontalScrollIndicator={false}
           data={sortedEvent}
           contentContainerStyle={styles.FlatListContainer}
-          keyExtractor={item => item.id}
-          renderItem={({item}) => {
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => {
             return (
               <TouchableOpacity
                 onPress={() => {
@@ -282,7 +340,7 @@ const styles = StyleSheet.create({
     fontFamily: FONTFAMILY.poppins_semibold,
     color: COLORS.primaryWhiteHex,
     paddingLeft: SPACING.space_30,
-    marginBottom:SPACING.space_15
+    marginBottom: SPACING.space_15,
   },
   InputContainerComponent: {
     flexDirection: 'row',
@@ -334,13 +392,47 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: SPACING.space_36 * 3.6,
   },
-  CoffeeBeansTitle: {
-    fontSize: FONTSIZE.size_18,
-    marginLeft: SPACING.space_30,
-    marginTop: SPACING.space_20,
-    fontFamily: FONTFAMILY.poppins_medium,
-    color: COLORS.secondaryLightGreyHex,
+  menuContainer: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
   },
+  menu: {
+    paddingVertical: 20,
+    paddingHorizontal: 20,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+    backgroundColor: COLORS.primaryDarkGreyHex,
+    height:300,
+  },
+  closeButton: {
+    position: 'absolute',
+    top: -20,
+    right: 20,
+    backgroundColor: COLORS.primaryOrangeHex,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 1,
+  },
+  closeButtonText: {
+    color: COLORS.primaryWhiteHex,
+    fontSize: FONTSIZE.size_16,
+  },
+  menuItem: {
+    paddingVertical: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.primaryGreyHex,
+  },
+  DateText:{
+    fontFamily: FONTFAMILY.poppins_semibold,
+    fontSize: FONTSIZE.size_16,
+    color: COLORS.secondaryLightGreyHex,
+    marginBottom: SPACING.space_4,
+  }
 });
 
 export default HomeScreen;

@@ -22,6 +22,7 @@ interface ImageBackgroundInfoProps {
   imagelink_portrait: ImageProps;
   type: string;
   id: string;
+  date: string;
   favourite: boolean;
   name: string;
   special_ingredient: string;
@@ -47,6 +48,7 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
   roasted,
   BackHandler,
   ToggleFavourite,
+  date
 }) => {
   return (
     <View>
@@ -102,6 +104,9 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                 <Text style={styles.ItemTitleText}>{name}</Text>
                 <Text style={styles.ItemSubtitleText}>
                   {special_ingredient}
+                </Text>
+                <Text style={styles.ItemSubtitleText}>
+                  {date}
                 </Text>
               </View>
               <View style={styles.ItemPropertiesContainer}>
