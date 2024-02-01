@@ -8,7 +8,7 @@ const EventData = [
     Etkinlik başladıktan sonra gelen seyircilerimizin satın almış oldukları koltuğa oturamama durumundan Bubilet ve Organizatör sorumlu değildir. Organizatör firma ve Bubilet geç kalan misafirler için koltuk garantisi vermez. Bu sebeple etkinliğe konser saatinden önce gelmenizi önemle rica ederiz. 
     Etkinlik alanına giriş yapan katılımcıların alandan çıkış yapmaları halinde yeni bilet satın almaları gerekecektir.   
     `,
-    roasted: 'Ato Congresium Ankara',
+    place: 'Ato Congresium Ankara',
     imagelink_square: require('../assets/event_assets/concerts/square/mabelmatiz_square.png'),
     imagelink_portrait: require('../assets/event_assets/concerts/portrait/mabelmatiz_portrait.png'),
     ingredients: 'Konser',
@@ -30,7 +30,7 @@ const EventData = [
     category:'Konser',
     date:'22-02-2024',
     description: `Müzik hayatına 13 yaşında eline aldığı klasik gitarla başlayan Can Ozan, "Sar Bu Şehri", "Aşk", "Hiç Kimsenin Günahı Yok", "Kalbimden Tenime" ve "Toprak Yağmura" gibi kariyerinin sevilen hitlerini hayranlarıyla söylemeye hazırlanıyor. `,
-    roasted: 'Yenimahalle Nazım Hikmet Kültür Merkezi-Genco Erkal Sahnesi',
+    place: 'Yenimahalle Nazım Hikmet Kültür Merkezi-Genco Erkal Sahnesi',
     imagelink_square: require('../assets/event_assets/concerts/square/canozan_square.jpg'),
     imagelink_portrait: require('../assets/event_assets/concerts/portrait/canozan_portrait.jpg'),
     ingredients: 'Akustik',
@@ -57,7 +57,7 @@ const EventData = [
     Organizasyon sahibi etkinlik bilet bedelini iade etmek koşuluyla uygun görmedikleri kişiyi etkinlik alanına almama hakkına sahiptir. 
     Etkinlik alanına yiyecek, içecek alınmamaktadır. 
     Etkinlik alanına evcil hayvan kabul edilmemektedir.`,
-    roasted: 'Yenimahalle Nazım Hikmet Kültür Merkezi-Genco Erkal Sahnesi',
+    place: 'Yenimahalle Nazım Hikmet Kültür Merkezi-Genco Erkal Sahnesi',
     imagelink_square: require('../assets/event_assets/concerts/square/gokhanturkmen_square.jpg'),
     imagelink_portrait: require('../assets/event_assets/concerts/portrait/gokhanturkmen_portrait.jpg'),
     ingredients: 'Konser',
@@ -83,7 +83,7 @@ const EventData = [
     Organizasyon sahibi etkinlik bilet bedelini iade etmek koşuluyla uygun görmedikleri kişiyi etkinlik alanına almama hakkına sahiptir. 
     Etkinlik alanına yiyecek, içecek alınmamaktadır. 
     Etkinlik alanına evcil hayvan kabul edilmemektedir.`,
-    roasted: 'Congresium Ankara',
+    place: 'Congresium Ankara',
     imagelink_square: require('../assets/event_assets/concerts/square/mazharfuat_square.png'),
     imagelink_portrait: require('../assets/event_assets/concerts/portrait/mazharfuat_portrait.png'),
     ingredients: 'Konser',
@@ -105,7 +105,7 @@ const EventData = [
     category:'Konser',
     date:'14-02-2024',
     description: `Melike Şahin, 14 Şubat Çarşamba akşamı Atlantis Yapım organizasyonu ile ATO Congresium’da Ankaralı sevenlerine unutulmayacak bir Sevgililer Günü yaşatacak!`,
-    roasted: 'Congresium Ankara',
+    place: 'Congresium Ankara',
     imagelink_square: require('../assets/event_assets/concerts/square/melikesahin_square.png'),
     imagelink_portrait: require('../assets/event_assets/concerts/portrait/melikesahin_portrait.png'),
     ingredients: 'Konser',
@@ -152,7 +152,7 @@ const EventData = [
     Tür: Komedi
     Yaş Sınırı: 16+
     Süre: 2 perde, 130 dk.`,
-    roasted: 'Ankara Yeni Sahne',
+    place: 'Ankara Yeni Sahne',
     imagelink_square: require('../assets/event_assets/theatres/square/istibdatkumpanyasi_square.jpg'),
     imagelink_portrait: require('../assets/event_assets/theatres/portrait/istibdatkumpanyasi_portrait.jpg'),
     ingredients: 'Tiyatro',
@@ -180,7 +180,7 @@ const EventData = [
     Cumhuriyet tarihinde görülmüş en büyük işçi hareketi olan 15-16 Haziran 1970 olaylarının zengin bir ailenin mutfağına yansıması. 
     
     Hizmet etmekten başka bir şey düşünemeyen köşk çalışanları da gözlerinin önünde gelişen olaylar karşısında kayıtsız kalamayacaktır. Toplumdaki değişimden her biri kendi payına düşeni alacaktır.os are a classic Italian type of coffee drink made of espresso, steamed milk, and thick foam in equal parts. The name comes from the resemblance to the hoods worn by Capuchin monks. Making cappuccino is relatively easy and can be done at home too if you know how to make espresso.`,
-    roasted: 'Congresium Ankara',
+    place: 'Congresium Ankara',
     imagelink_square: require('../assets/event_assets/theatres/square/zenginmutfagi_square.png'),
     imagelink_portrait: require('../assets/event_assets/theatres/portrait/zenginmutfagi_portrait.png'),
     ingredients: 'Tiyatro',
@@ -206,7 +206,7 @@ const EventData = [
     Milli mücadele yıllarında İstanbul'daki bir konakta yaşanan acı, tatlı olayları anlatan oyun gerçek hayatta yaşanmış olaylar üzerine kurulu! Tiyatrokare'nin uzun süredir üzerinde çalıştığı Veda'da Nevra Serezli, renkli bir deli saraylı kompozisyonu ile öne çıkıyor! Aziz Sarvan'ın, Kulin'in Osmanlının son maliye nazırı olan dedesini, Leyla Feray'ın bir yasak aşkın kahramınını, Fatih Gülnar'ın Cumhuriyet aydınını canlandırdığı oyunda diğer rollerde Meral Asiltürk, Alişan Özkan, Zeynep Sevi Yılmaz, Gizemnur Topaloğlu, Gizem Çayhanoğlu var!
     
     "Her veda bir başlangıçtır" diyerek yola çıkılan Veda, sancılı  bir tarihsel döngü hikayesi, umut dolu bir insanlık öyküsü!`,
-    roasted: 'MEB Şura Salonu',
+    place: 'MEB Şura Salonu',
     imagelink_square: require('../assets/event_assets/theatres/square/vedaoyunu_square.jpeg'),
     imagelink_portrait: require('../assets/event_assets/theatres/portrait/vedaoyunu_portrait.jpeg'),
     ingredients: 'Tiyatro',
@@ -240,7 +240,7 @@ const EventData = [
     21.30 Hey! Douglas
     
     Daha fazlası için takipte kal!`,
-    roasted: 'Fuar İzmir',
+    place: 'Fuar İzmir',
     imagelink_square: require('../assets/event_assets/fests/square/izmirfest_square.jpg'),
     imagelink_portrait: require('../assets/event_assets/fests/portrait/izmirfest_portrait.jpg'),
     ingredients: 'Festival',
@@ -262,7 +262,7 @@ const EventData = [
     date:'28-02-2024',
     category:'Festival',
     description: `Kocaeli'nde müziğin sesini biraz daha yükseltiyoruz. Müziğin büyülü dünyası, enfes lezzetlerle buluşuyor ve renkli oyun alanlarıyla birleşiyor! Bu yıl Kocaeli Müzik Festivali ile müzikseverler unutulmaz anlara tanıklık edecekler. Festivalimiz, en sevilen sanatçıların sahne alacağı, enerji dolu performanslarla dolu unutulmaz bir deneyim sunmaya hazırlanıyor.`,
-    roasted: 'Emex Otel Kocaeli ',
+    place: 'Emex Otel Kocaeli ',
     imagelink_square: require('../assets/event_assets/fests/square/kocaelifest_square.png'),
     imagelink_portrait: require('../assets/event_assets/fests/portrait/kocaelifest_portrait.png'),
     ingredients: 'Festival',
@@ -284,7 +284,7 @@ const EventData = [
     category:'Festival',
     date:'20-02-2024',
     description: `Bu yıl ikinci kez düzenlenecek olan Konya Müzik Festivali, 3 gün boyunca çeşitli etkinlikler, birbirinden eşsiz sahne performansları ile Grand Hotel’de tüm müzikseverler ile buluşuyor.`,
-    roasted: 'Grand Hotel Konya',
+    place: 'Grand Hotel Konya',
     imagelink_square: require('../assets/event_assets/fests/square/konyafest_square.jpg'),
     imagelink_portrait: require('../assets/event_assets/fests/portrait/konyafest_portrait.jpg'),
     ingredients: 'Festival',
@@ -306,7 +306,7 @@ const EventData = [
     category:'Festival',
     date:'25-02-2024',
     description: `Bu yıl üçüncü kez düzenlenecek olan Sakarya Müzik Festivali, 3 gün boyunca çeşitli etkinlikler, birbirinden eşsiz sahne performansları ile Del Lago Hotel’de tüm müzikseverler ile buluşuyor.`,
-    roasted: 'Del Lago Luxury Hotel',
+    place: 'Del Lago Luxury Hotel',
     imagelink_square: require('../assets/event_assets/fests/square/sakaryafest_square.jpg'),
     imagelink_portrait: require('../assets/event_assets/fests/portrait/sakaryafest_portrait.jpg'),
     ingredients: 'Festival',
@@ -332,7 +332,7 @@ const EventData = [
     Büyük Ev Ablukada
     
     Sanatçılar ve detaylar yakında!`,
-    roasted: 'Foça Sahili',
+    place: 'Foça Sahili',
     imagelink_square: require('../assets/event_assets/fests/square/whatafest_square.png'),
     imagelink_portrait: require('../assets/event_assets/fests/portrait/whatafest_portrait.png'),
     ingredients: 'Festival',
@@ -354,7 +354,7 @@ const EventData = [
     category:'Stand-Up',
     date:'05-03-2024',
     description: `Aralarında BKM Mutfak'ta da sahne alan komedyenlerin bulunduğu dört komedyenin birbirinden farklı hikayelerine şahitlik edeceğiz eğlence dolu Stand up gecesi!`,
-    roasted: 'Berlin Cafe Pub',
+    place: 'Berlin Cafe Pub',
     imagelink_square: require('../assets/event_assets/standups/square/ankarastandup_square.jpg'),
     imagelink_portrait: require('../assets/event_assets/standups/portrait/ankarastandup_portrait.jpg'),
     ingredients: 'Stand-Up',
@@ -378,7 +378,7 @@ const EventData = [
     description: `Doğa sporları ve iyi müziği bir araya getiren WOLFEST’24, 31 Mayıs 1 – 2 Haziran 2024 tarihlerinde Jack Wolfskin ana sponsorluğunda mavi bayraklı plajıyla dikkat çeken Patagonya World Seyrek Plajı / Kandıra / Kocaeli’nde gerçekleştiriliyor.
 
     Detaylar yakında!`,
-    roasted: 'Kocaeli Seyrek Plajı / Patagonya World',
+    place: 'Kocaeli Seyrek Plajı / Patagonya World',
     imagelink_square: require('../assets/event_assets/fests/square/wolfest_square.png'),
     imagelink_portrait: require('../assets/event_assets/fests/portrait/wolfest_portrait.png'),
     ingredients: 'Festival',
@@ -402,7 +402,7 @@ const EventData = [
     description: `Stand up gösterisini kapalı gişe oynayan Ahlat Ağacı, Ölümlü Dünya, Bayi Toplantısı filmlerindeki başarılı performansının ardından,  ‘Doğu’ dizisinin ilk sezonunun çekimlerini tamamlayan komedyen sevenleriyle buluşmaya hazırlanıyor. 
 
     Türkiye, Avrupa ve Amerika’da ve dünyanın farklı şehirlerinde gerçekleştirdiği tek kişilik gösterisinde kendi yaşamından ve bu topraklarda güldürü niteliği taşıyan her olaydan beslenen Doğu Demirkol, bu sezon da seyircisi ile buluşmaya hazırlanıyor. `,
-    roasted: 'Yenimahalle Nazım Hikmet Kültür Merkezi-Genco Erkal Sahnesi',
+    place: 'Yenimahalle Nazım Hikmet Kültür Merkezi-Genco Erkal Sahnesi',
     imagelink_square: require('../assets/event_assets/standups/square/dogudemirkol_square.jpg'),
     imagelink_portrait: require('../assets/event_assets/standups/portrait/dogudemirkol_portrait.jpg'),
     ingredients: 'Stand Up',
@@ -426,7 +426,7 @@ const EventData = [
     description: `Okyanusun en önemli gününde Shark ailesi çok mutlu ve gururludur. Muhteşem bir kutlama için herşey hazırdır. Hiç beklenmedik bir anda ortaya çıkan bir sorun Baby Shark ve onun süpriz arkadaşlarının çabalarıyla çözülecektir. Müzik ve dansların hiç kesilmediği bu kutlamalarda yerlerini alan herkes Baby Shark ve ailesiyle tanışıp çok eğlenecektir.
 
     İşini şansa bırakmak istemiyorsan acele et, Baby Shark Live Show’da sen de yerini al!`,
-    roasted: 'MEB Şura Salonu',
+    place: 'MEB Şura Salonu',
     imagelink_square: require('../assets/event_assets/kids/square/babyshark_square.png'),
     imagelink_portrait: require('../assets/event_assets/kids/portrait/babyshark_portrait.png'),
     ingredients: 'Çocuk',
@@ -468,7 +468,7 @@ const EventData = [
     Ses Tasarım: Uğur İLVAN
     Işık Tasarım: Veli KARATAŞ
     Afiş Tasarım: Mehmet Selim ÖZBAN`,
-    roasted: 'Çankaya Belediyesi Yaşar Kemal Kültür Merkezi',
+    place: 'Çankaya Belediyesi Yaşar Kemal Kültür Merkezi',
     imagelink_square: require('../assets/event_assets/kids/square/biruzayhayali_square.jpg'),
     imagelink_portrait: require('../assets/event_assets/kids/portrait/biruzayhayali_portrait.jpg'),
     ingredients: 'Çocuk',

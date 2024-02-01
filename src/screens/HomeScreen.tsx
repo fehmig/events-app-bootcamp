@@ -25,6 +25,9 @@ import { FlatList } from 'react-native';
 import CoffeeCard from '../components/CoffeeCard';
 import { Dimensions } from 'react-native';
 import SwiperFlatListComponent from '../components/SliderComponent';
+import CustomModal from '../components/FilterModal';
+import FilterModal from '../components/FilterModal';
+
 
 const getCategoriesFromData = (data: any) => {
   let temp: any = {};
@@ -40,6 +43,45 @@ const getCategoriesFromData = (data: any) => {
   return categories;
 };
 
+const getDatesFromData = (data: any) => {
+  let temp: any = {};
+  for (let i = 0; i < data.length; i++) {
+    if (temp[data[i].date] == undefined) {
+      temp[data[i].date] = 1;
+    } else {
+      temp[data[i].date]++;
+    }
+  }
+  let dates= Object.keys(temp);
+  return dates;
+}; 
+
+const getPlacesFromData = (data: any) => {
+  let temp: any = {};
+  for (let i = 0; i < data.length; i++) {
+    if (temp[data[i].place] == undefined) {
+      temp[data[i].place] = 1;
+    } else {
+      temp[data[i].place]++;
+    }
+  }
+  let places= Object.keys(temp);
+  return places;
+}; 
+
+const getLocationsFromData = (data: any) => {
+  let temp: any = {};
+  for (let i = 0; i < data.length; i++) {
+    if (temp[data[i].special_ingredient] == undefined) {
+      temp[data[i].special_ingredient] = 1;
+    } else {
+      temp[data[i].special_ingredient]++;
+    }
+  }
+  let locations= Object.keys(temp);
+  return locations;
+}; 
+
 const getEventList = (category: string, data: any) => {
   if (category == 'Tümü') {
     return data;
@@ -53,27 +95,13 @@ const HomeScreen = ({ navigation }: any) => {
   const EventList = useStore((state: any) => state.EventList);
   const addToCart = useStore((state: any) => state.addToCart);
   const calculateCartPrice = useStore((state: any) => state.calculateCartPrice);
-
-  const getDatesFromData = (data: any) => {
-    let temp: any = {};
-    for (let i = 0; i < data.length; i++) {
-      if (temp[data[i].date] == undefined) {
-        temp[data[i].date] = 1;
-      } else {
-        temp[data[i].date]++;
-      }
-    }
-    let dates= Object.keys(temp);
-    return dates;
-  }; 
-
   const [dates, setDates] = useState(getDatesFromData(EventList));
-  const [showMenu, setShowMenu] = useState(false);
-
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
+  const [places, setPlaces] = useState(getPlacesFromData(EventList));
+  const [locations, setLocations] = useState(getLocationsFromData(EventList));
+  const [showDateMenu, setShowDateMenu] = useState(false);
+  const [showLocationMenu, setShowLocationMenu] = useState(false);
+  const [showPlaceMenu, setShowPlaceMenu] = useState(false);
+  const [filterModalVisible, setFilterModalVisible] = useState(false);
   const [categories, setCategories] = useState(
     getCategoriesFromData(EventList),
   );
@@ -82,29 +110,49 @@ const HomeScreen = ({ navigation }: any) => {
     index: 0,
     category: categories[0],
   });
-  
+  const togglePlaceMenu = () => {
+    setShowPlaceMenu(!showPlaceMenu);
+  };
+  const toggleLocationMenu = () => {
+    setShowLocationMenu(!showLocationMenu);
+  };
+  const toggleDateMenu = () => {
+    setShowDateMenu(!showDateMenu);
+  };
   const [sortedEvent, setSortedEvent] = useState(
     getEventList(categoryIndex.category, EventList),
   );
-
   const ListRef: any = useRef<FlatList>();
   const tabBarHeight = useBottomTabBarHeight();
 
   const handleDatePress = (selectedDate: string) => {
-    // Seçilen tarihe göre etkinlikleri güncelle
     const eventsForSelectedDate = EventList.filter((item: { date: string; }) => item.date === selectedDate);
     setSortedEvent(eventsForSelectedDate);
-  
-    // Menüyü kapat
-    toggleMenu();
+    toggleDateMenu();
+  };
+
+  const handleLocationPress = (selectedLocation: string) => {
+    const eventsForSelectedLocation = EventList.filter((item: { special_ingredient: string; }) => item.special_ingredient === selectedLocation);
+    setSortedEvent(eventsForSelectedLocation);
+    toggleLocationMenu();
+  };
+
+  const handlePlacePress = (selectedPlace: string) => {
+    const eventsForSelectedPlace = EventList.filter((item: { place: string; }) => item.place === selectedPlace);
+    setSortedEvent(eventsForSelectedPlace);
+    togglePlaceMenu();
   };
 
   const handleCategoryChange = (selectedCategory: string) => {
-    // Kategori değiştiğinde tarihleri güncelle
+    // Kategori değiştiğinde filtreleri güncelle
     const filteredEventList = getEventList(selectedCategory, EventList);
     setSortedEvent(filteredEventList);
     const filteredDates = getDatesFromData(filteredEventList);
     setDates(filteredDates);
+    const filteredPlaces = getPlacesFromData(filteredEventList)
+    setPlaces(filteredPlaces)
+    const filteredLocations = getLocationsFromData(filteredEventList)
+    setLocations(filteredLocations)
     setCategoryIndex({ index: categories.indexOf(selectedCategory), category: selectedCategory });
   };
 
@@ -137,7 +185,7 @@ const HomeScreen = ({ navigation }: any) => {
     id,
     index,
     name,
-    roasted,
+    place,
     imagelink_square,
     special_ingredient,
     type,
@@ -147,7 +195,7 @@ const HomeScreen = ({ navigation }: any) => {
       id,
       index,
       name,
-      roasted,
+      place,
       imagelink_square,
       special_ingredient,
       type,
@@ -227,8 +275,9 @@ const HomeScreen = ({ navigation }: any) => {
           horizontal
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.CategoryScrollViewStyle}>
-           <TouchableOpacity onPress={toggleMenu}>
+      <TouchableOpacity onPress={() => setFilterModalVisible(true)} >
         <CustomIcon
+          style={{marginRight:SPACING.space_10}}
           name="add"
           size={FONTSIZE.size_18}
           color={COLORS.primaryOrangeHex}
@@ -237,24 +286,64 @@ const HomeScreen = ({ navigation }: any) => {
       <Modal
         animationType="slide"
         transparent={true}
-        visible={showMenu}
+        visible={filterModalVisible}
         onRequestClose={() => {
-          setShowMenu(!showMenu);
+          setFilterModalVisible(!filterModalVisible);
         }}
       >
         <View style={styles.menuContainer}>
-          <TouchableOpacity onPress={toggleMenu} style={styles.closeButton}>
-            <Text style={styles.closeButtonText}><CustomIcon name='close' color={COLORS.primaryDarkGreyHex}/></Text>
-          </TouchableOpacity>
-          <ScrollView style={styles.menu}>
-            {dates.map((date, index) => (
-              <TouchableOpacity key={index} style={styles.menuItem}  onPress={() => handleDatePress(date)}>
-                <Text style={styles.DateText}>{date}</Text>
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
+          <View style={styles.menu}>
+            <TouchableOpacity onPress={() => setFilterModalVisible(false)} style={styles.closeButton}>
+              <Text style={styles.closeButtonText}>X</Text>
+            </TouchableOpacity>
+            <Text style={styles.TitleText}>Filtreleme Seçenekleri</Text>
+            <TouchableOpacity onPress={() => {
+              toggleDateMenu()
+              setFilterModalVisible(false);
+            }} style={styles.menuItem}>
+              <Text style={styles.OptionText}>Tarihe Göre Filtrele</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+              toggleLocationMenu()
+              setFilterModalVisible(false);
+            }} style={styles.menuItem}>
+              <Text style={styles.OptionText}>Şehre Göre Filtrele</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+              togglePlaceMenu()
+              setFilterModalVisible(false);
+            }} style={styles.menuItem}>
+              <Text style={styles.OptionText}>Mekana Göre Filtrele</Text>
+            </TouchableOpacity>
+         
+          </View>
         </View>
       </Modal>
+     
+
+          {/*Date Filter */}
+      <FilterModal 
+        visible={showDateMenu} 
+        filterType='dates' 
+        options={dates} 
+        onRequestClose={() => setShowDateMenu(false)} 
+        onSelectOption={handleDatePress} />
+
+             {/*Place Filter */}
+      <FilterModal 
+        visible={showPlaceMenu} 
+        filterType='place' 
+        options={places} 
+        onRequestClose={() => setShowPlaceMenu(false)} 
+        onSelectOption={handlePlacePress} />
+
+            {/*Location Filter */}
+      <FilterModal 
+        visible={showLocationMenu} 
+        filterType='location' 
+        options={locations} 
+        onRequestClose={() => setShowLocationMenu(false)} 
+        onSelectOption={handleLocationPress} />
 
           {categories.map((data, index) => (
             <View
@@ -310,7 +399,7 @@ const HomeScreen = ({ navigation }: any) => {
                   id={item.id}
                   index={item.index}
                   type={item.type}
-                  roasted={item.roasted}
+                  place={item.place}
                   imagelink_square={item.imagelink_square}
                   name={item.name}
                   special_ingredient={item.special_ingredient}
@@ -392,6 +481,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: SPACING.space_36 * 3.6,
   },
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  modalContent: {
+    backgroundColor: '#FFF',
+    padding: 20,
+    borderRadius: 10,
+  },
+  option: {
+    marginBottom: 10,
+    fontSize: 16,
+  },
   menuContainer: {
     position: 'absolute',
     bottom: 0,
@@ -427,12 +531,19 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: COLORS.primaryGreyHex,
   },
-  DateText:{
+  OptionText:{
     fontFamily: FONTFAMILY.poppins_semibold,
     fontSize: FONTSIZE.size_16,
     color: COLORS.secondaryLightGreyHex,
     marginBottom: SPACING.space_4,
+  },
+  TitleText:{
+    fontFamily: FONTFAMILY.poppins_semibold,
+    fontSize: FONTSIZE.size_16,
+    color: COLORS.primaryWhiteHex,
+    marginBottom: SPACING.space_4,
   }
+ 
 });
 
 export default HomeScreen;

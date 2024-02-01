@@ -29,7 +29,7 @@ interface ImageBackgroundInfoProps {
   ingredients: string;
   average_rating: number;
   ratings_count: string;
-  roasted: string;
+  place: string;
   BackHandler?: any;
   ToggleFavourite: any;
 }
@@ -45,7 +45,7 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
   ingredients,
   average_rating,
   ratings_count,
-  roasted,
+  place,
   BackHandler,
   ToggleFavourite,
   date
@@ -149,8 +149,8 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                 <Text style={styles.RatingText}>{average_rating}</Text>
                 <Text style={styles.RatingCountText}>({ratings_count})</Text>
               </View>
-              <View style={styles.RoastedContainer}>
-                <Text style={styles.RoastedText}>{roasted}</Text>
+              <View style={styles.PlaceContainer}>
+                <Text style={styles.PlaceText}>{place}</Text>
               </View>
             </View>
           </View>
@@ -243,7 +243,7 @@ const styles = StyleSheet.create({
     fontSize: FONTSIZE.size_12,
     color: COLORS.primaryWhiteHex,
   },
-  RoastedContainer: {
+  PlaceContainer: {
     height: 55,
     width: 55 * 2 + SPACING.space_20,
     borderRadius: BORDERRADIUS.radius_15,
@@ -251,7 +251,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: COLORS.primaryBlackHex,
   },
-  RoastedText: {
+  PlaceText: {
     fontFamily: FONTFAMILY.poppins_regular,
     fontSize: FONTSIZE.size_10,
     color: COLORS.primaryWhiteHex,

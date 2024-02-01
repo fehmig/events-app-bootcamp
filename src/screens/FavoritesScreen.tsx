@@ -59,11 +59,11 @@ const FavoritesScreen = ({navigation}: any) => {
                       ingredients={data.ingredients}
                       average_rating={data.average_rating}
                       ratings_count={data.ratings_count}
-                      roasted={data.roasted}
+                      place={data.place}
                       description={data.description}
                       favourite={data.favourite}
-                      ToggleFavouriteItem={ToggleFavourite}
-                    />
+                      ToggleFavouriteItem={ToggleFavourite} 
+                      date={data.date}                    />
                   </TouchableOpacity>
                 ))}
               </View>

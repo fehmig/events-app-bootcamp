@@ -44,7 +44,7 @@ const DetailsScreen = ({navigation, route}: any) => {
     id,
     index,
     name,
-    roasted,
+    place,
     imagelink_square,
     special_ingredient,
     type,
@@ -54,7 +54,7 @@ const DetailsScreen = ({navigation, route}: any) => {
       id,
       index,
       name,
-      roasted,
+      place,
       imagelink_square,
       special_ingredient,
       type,
@@ -82,7 +82,7 @@ const DetailsScreen = ({navigation, route}: any) => {
           ingredients={ItemOfIndex.ingredients}
           average_rating={ItemOfIndex.average_rating}
           ratings_count={ItemOfIndex.ratings_count}
-          roasted={ItemOfIndex.roasted}
+          place={ItemOfIndex.place}
           BackHandler={BackHandler}
           ToggleFavourite={ToggleFavourite}
         />
@@ -153,7 +153,7 @@ const DetailsScreen = ({navigation, route}: any) => {
               id: ItemOfIndex.id,
               index: ItemOfIndex.index,
               name: ItemOfIndex.name,
-              roasted: ItemOfIndex.roasted,
+              place: ItemOfIndex.place,
               imagelink_square: ItemOfIndex.imagelink_square,
               special_ingredient: ItemOfIndex.special_ingredient,
               type: ItemOfIndex.type,
