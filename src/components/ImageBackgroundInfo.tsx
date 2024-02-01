@@ -105,38 +105,22 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                 <Text style={styles.ItemSubtitleText}>
                   {special_ingredient}
                 </Text>
-                <Text style={styles.ItemSubtitleText}>
-                  {date}
-                </Text>
+               
               </View>
               <View style={styles.ItemPropertiesContainer}>
                 <View style={styles.ProperFirst}>
-                  <CustomIcon
-                    name='location' 
-                    size={type == 'Bean' ? FONTSIZE.size_18 : FONTSIZE.size_24}
-                    color={COLORS.primaryOrangeHex}
-                  />
+                  
                   <Text
                     style={[
                       styles.PropertyTextFirst,
                       {
-                        marginTop:
-                          type == 'Bean'
-                            ? SPACING.space_4 + SPACING.space_2
-                            : 0,
+                        marginTop:SPACING.space_2
                       },
                     ]}>
-                    Nerede?
+                    {date}
                   </Text>
                 </View>
-                {/* <View style={styles.ProperFirst}>
-                  <CustomIcon
-                    name={type == 'Bean' ? 'location' : 'drop'}
-                    size={FONTSIZE.size_16}
-                    color={COLORS.primaryOrangeHex}
-                  />
-                  <Text style={styles.PropertyTextLast}>{ingredients}</Text>
-                </View> */}
+                
               </View>
             </View>
             <View style={styles.InfoContainerRow}>
@@ -149,7 +133,13 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                 <Text style={styles.RatingText}>{average_rating}</Text>
                 <Text style={styles.RatingCountText}>({ratings_count})</Text>
               </View>
+              
               <View style={styles.PlaceContainer}>
+              <CustomIcon
+                    name='location' 
+                    size={FONTSIZE.size_24 }
+                    color={COLORS.primaryOrangeHex}
+                  />
                 <Text style={styles.PlaceText}>{place}</Text>
               </View>
             </View>
@@ -201,7 +191,7 @@ const styles = StyleSheet.create({
   },
   ItemSubtitleText: {
     fontFamily: FONTFAMILY.poppins_medium,
-    fontSize: FONTSIZE.size_12,
+    fontSize: FONTSIZE.size_14,
     color: COLORS.primaryWhiteHex,
   },
   ItemPropertiesContainer: {
@@ -211,7 +201,7 @@ const styles = StyleSheet.create({
   },
   ProperFirst: {
     height: 55,
-    width: 55,
+    width: 72,
     borderRadius: BORDERRADIUS.radius_15,
     justifyContent: 'center',
     alignItems: 'center',
@@ -219,7 +209,7 @@ const styles = StyleSheet.create({
   },
   PropertyTextFirst: {
     fontFamily: FONTFAMILY.poppins_medium,
-    fontSize: FONTSIZE.size_10,
+    fontSize: FONTSIZE.size_12,
     color: COLORS.primaryWhiteHex,
   },
   PropertyTextLast: {
@@ -245,16 +235,19 @@ const styles = StyleSheet.create({
   },
   PlaceContainer: {
     height: 55,
-    width: 55 * 2 + SPACING.space_20,
+    width: 70 * 2 + SPACING.space_20,
+    padding:SPACING.space_10,
     borderRadius: BORDERRADIUS.radius_15,
-    justifyContent: 'center',
+    flexDirection:'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: COLORS.primaryBlackHex,
   },
   PlaceText: {
     fontFamily: FONTFAMILY.poppins_regular,
-    fontSize: FONTSIZE.size_10,
+    fontSize: FONTSIZE.size_12,
     color: COLORS.primaryWhiteHex,
+    marginLeft:SPACING.space_10,
   },
 });
 

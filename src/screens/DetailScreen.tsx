@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   ScrollView,
   StatusBar,
@@ -8,7 +8,7 @@ import {
   TouchableWithoutFeedback,
   TouchableOpacity,
 } from 'react-native';
-import {useStore} from '../store/store';
+import { useStore } from '../store/store';
 import {
   BORDERRADIUS,
   COLORS,
@@ -18,8 +18,10 @@ import {
 } from '../theme/theme';
 import ImageBackgroundInfo from '../components/ImageBackgroundInfo';
 import PaymentFooter from '../components/PaymentFooter';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+import CustomIcon from '../components/CustomIcon';
 
-const DetailsScreen = ({navigation, route}: any) => {
+const DetailsScreen = ({ navigation, route }: any) => {
   const ItemOfIndex = useStore((state: any) => state.EventList,
   )[route.params.index];
   const addToFavoriteList = useStore((state: any) => state.addToFavoriteList);
@@ -58,7 +60,7 @@ const DetailsScreen = ({navigation, route}: any) => {
       imagelink_square,
       special_ingredient,
       type,
-      prices: [{...price, quantity: 1}],
+      prices: [{ ...price, quantity: 1 }],
     });
     calculateCartPrice();
     navigation.navigate('Cart');
@@ -108,6 +110,32 @@ const DetailsScreen = ({navigation, route}: any) => {
               </Text>
             </TouchableWithoutFeedback>
           )}
+        <MapView
+          provider={PROVIDER_GOOGLE}
+          style={styles.map}
+          initialRegion={{
+            latitude: ItemOfIndex.location[0].latitude,
+            longitude: ItemOfIndex.location[1].longitude,
+            latitudeDelta: 0.02,
+            longitudeDelta: 0.01,
+          }}
+          zoomEnabled={true}
+          showsCompass={true}
+          showsScale={true}
+          showsTraffic={true}
+          showsBuildings={true}
+          showsIndoors={true}
+          showsUserLocation={true}
+        >
+          <Marker
+            coordinate={{
+              latitude: ItemOfIndex.location[0].latitude,
+              longitude: ItemOfIndex.location[1].longitude,
+            }}
+            title={ItemOfIndex.name}
+            description={ItemOfIndex.place}
+          />
+        </MapView>
           <Text style={styles.InfoTitle}>Bilet Tipi</Text>
           <View style={styles.SizeOuterContainer}>
             {ItemOfIndex.prices.map((data: any) => (
@@ -145,6 +173,7 @@ const DetailsScreen = ({navigation, route}: any) => {
             ))}
           </View>
         </View>
+        
         <PaymentFooter
           price={price}
           buttonTitle="Sepete Ekle"
@@ -183,6 +212,7 @@ const styles = StyleSheet.create({
     fontSize: FONTSIZE.size_16,
     color: COLORS.primaryWhiteHex,
     marginBottom: SPACING.space_10,
+    
   },
   DescriptionText: {
     letterSpacing: 0.5,
@@ -208,6 +238,35 @@ const styles = StyleSheet.create({
   },
   SizeText: {
     fontFamily: FONTFAMILY.poppins_medium,
+  },
+  map: {
+    width: '100%',
+    height: 300,
+    marginBottom:SPACING.space_12
+  },
+  ItemPropertiesContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: SPACING.space_20,
+  },
+  ProperFirst: {
+    height: 55,
+    width: 60,
+    borderRadius: BORDERRADIUS.radius_15,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: COLORS.primaryBlackHex,
+  },
+  PropertyTextFirst: {
+    fontFamily: FONTFAMILY.poppins_medium,
+    fontSize: FONTSIZE.size_12,
+    color: COLORS.primaryWhiteHex,
+  },
+  PropertyTextLast: {
+    fontFamily: FONTFAMILY.poppins_medium,
+    fontSize: FONTSIZE.size_10,
+    color: COLORS.primaryWhiteHex,
+    marginTop: SPACING.space_2 + SPACING.space_4,
   },
 });
 
