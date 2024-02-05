@@ -135,12 +135,12 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
               </View>
               
               <View style={styles.PlaceContainer}>
-              <CustomIcon
+                <Text style={styles.PlaceText}>{place}</Text>
+                <CustomIcon
                     name='location' 
                     size={FONTSIZE.size_24 }
                     color={COLORS.primaryOrangeHex}
                   />
-                <Text style={styles.PlaceText}>{place}</Text>
               </View>
             </View>
           </View>
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
   },
   ProperFirst: {
     height: 55,
-    width: 72,
+    width: 90,
     borderRadius: BORDERRADIUS.radius_15,
     justifyContent: 'center',
     alignItems: 'center',
@@ -211,6 +211,8 @@ const styles = StyleSheet.create({
     fontFamily: FONTFAMILY.poppins_medium,
     fontSize: FONTSIZE.size_12,
     color: COLORS.primaryWhiteHex,
+    marginRight:SPACING.space_4,
+    marginLeft:SPACING.space_4
   },
   PropertyTextLast: {
     fontFamily: FONTFAMILY.poppins_medium,
@@ -236,7 +238,7 @@ const styles = StyleSheet.create({
   PlaceContainer: {
     height: 55,
     width: 70 * 2 + SPACING.space_20,
-    padding:SPACING.space_10,
+    padding:SPACING.space_8,
     borderRadius: BORDERRADIUS.radius_15,
     flexDirection:'row',
     justifyContent: 'space-between',
@@ -247,7 +249,6 @@ const styles = StyleSheet.create({
     fontFamily: FONTFAMILY.poppins_regular,
     fontSize: FONTSIZE.size_12,
     color: COLORS.primaryWhiteHex,
-    marginLeft:SPACING.space_10,
   },
 });
 

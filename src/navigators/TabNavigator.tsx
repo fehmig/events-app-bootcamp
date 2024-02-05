@@ -6,7 +6,7 @@ import FavoritesScreen from '../screens/FavoritesScreen'
 import OrderHistoryScreen from '../screens/OrderHistoryScreen'
 import CartScreen from '../screens/CartScreen'
 import CustomIcon from '../components/CustomIcon'
-import { COLORS } from '../theme/theme'
+import { COLORS, SPACING } from '../theme/theme'
 import { BlurView } from '@react-native-community/blur'
 
 const Tab = createBottomTabNavigator()

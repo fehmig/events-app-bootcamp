@@ -22,11 +22,11 @@ import {
 import HeaderBar from '../components/HeaderBar';
 import CustomIcon from '../components/CustomIcon';
 import { FlatList } from 'react-native';
-import CoffeeCard from '../components/CoffeeCard';
 import { Dimensions } from 'react-native';
 import SwiperFlatListComponent from '../components/SliderComponent';
-import CustomModal from '../components/FilterModal';
 import FilterModal from '../components/FilterModal';
+import EventCard from '../components/EventCard';
+
 
 
 const getCategoriesFromData = (data: any) => {
@@ -102,6 +102,7 @@ const HomeScreen = ({ navigation }: any) => {
   const [showLocationMenu, setShowLocationMenu] = useState(false);
   const [showPlaceMenu, setShowPlaceMenu] = useState(false);
   const [filterModalVisible, setFilterModalVisible] = useState(false);
+  const numCols = 2
   const [categories, setCategories] = useState(
     getCategoriesFromData(EventList),
   );
@@ -221,7 +222,7 @@ const HomeScreen = ({ navigation }: any) => {
         <Text style={styles.ScreenTitle}>
           Hayatınızı Renklendirin,{'\n'}Etkinliklerle Dolu Bir Dünya!
         </Text>
-
+        {/* Home Slider */}
         <SwiperFlatListComponent />
 
         {/* Search Input */}
@@ -375,16 +376,17 @@ const HomeScreen = ({ navigation }: any) => {
 
         <FlatList
           ref={ListRef}
-          horizontal
           ListEmptyComponent={
             <View style={styles.EmptyListContainer}>
               <Text style={styles.CategoryText}>Etkinlik Bulunamadı</Text>
             </View>
           }
-          showsHorizontalScrollIndicator={false}
           data={sortedEvent}
           contentContainerStyle={styles.FlatListContainer}
           keyExtractor={(item) => item.id}
+          numColumns={numCols}
+          horizontal={false}
+          scrollEnabled={false}
           renderItem={({ item }) => {
             return (
               <TouchableOpacity
@@ -395,7 +397,7 @@ const HomeScreen = ({ navigation }: any) => {
                     type: item.type,
                   });
                 }}>
-                <CoffeeCard
+                <EventCard
                   id={item.id}
                   index={item.index}
                   type={item.type}
@@ -474,6 +476,7 @@ const styles = StyleSheet.create({
     gap: SPACING.space_20,
     paddingVertical: SPACING.space_20,
     paddingHorizontal: SPACING.space_30,
+    marginBottom:SPACING.space_36
   },
   EmptyListContainer: {
     width: Dimensions.get('window').width - SPACING.space_30 * 2,

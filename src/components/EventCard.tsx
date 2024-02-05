@@ -34,7 +34,7 @@ interface CoffeeCardProps {
   buttonPressHandler: any;
 }
 
-const CoffeeCard: React.FC<CoffeeCardProps> = ({
+const EventCard: React.FC<CoffeeCardProps> = ({
   id,
   index,
   type,
@@ -100,8 +100,8 @@ const styles = StyleSheet.create({
   CardLinearGradientContainer: {
     padding: SPACING.space_15,
     borderRadius: BORDERRADIUS.radius_25,
-    height:300,
-    marginBottom:100
+    height:270,
+    marginRight:SPACING.space_20
   },
   CardImageBG: {
     width: CARD_WIDTH,
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
   CardSubtitle: {
     fontFamily: FONTFAMILY.poppins_light,
     color: COLORS.primaryWhiteHex,
-    fontSize: FONTSIZE.size_10,
+    fontSize: FONTSIZE.size_14,
   },
   CardFooterRow: {
     flexDirection: 'row',
@@ -158,4 +158,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CoffeeCard;
+export default EventCard;

@@ -94,6 +94,10 @@
 		6FCBCD4978AE4696B016CE38 /* istibdatkumpanyasi_square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B2FDDF3915B43EBA8259CBD /* istibdatkumpanyasi_square.jpg */; };
 		D2A3220B592D4EE1BC8DFA21 /* vedaoyunu_square.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 19C0F88EAB96451D9444314E /* vedaoyunu_square.jpeg */; };
 		D45A7B016259467A9536F2FB /* zenginmutfagi_square.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F82FE93AC5412585958E21 /* zenginmutfagi_square.png */; };
+		1538112857E549A7ADAEFA31 /* banner1.png in Resources */ = {isa = PBXBuildFile; fileRef = 451D7049E7184D35A62CF51D /* banner1.png */; };
+		237806F9FDBB484CBFD36219 /* banner2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0AEF71B38B14B0FA523F7BE /* banner2.jpg */; };
+		3D4F3918FD43421D9567F766 /* banner3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 062BD393A97D49CFB3A1552D /* banner3.jpg */; };
+		67006084E49849FFAE61545A /* banner4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9436C963D94B48E1856B74DD /* banner4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +208,10 @@
 		5B2FDDF3915B43EBA8259CBD /* istibdatkumpanyasi_square.jpg */ = {isa = PBXFileReference; name = "istibdatkumpanyasi_square.jpg"; path = "../src/assets/event_assets/theatres/square/istibdatkumpanyasi_square.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		19C0F88EAB96451D9444314E /* vedaoyunu_square.jpeg */ = {isa = PBXFileReference; name = "vedaoyunu_square.jpeg"; path = "../src/assets/event_assets/theatres/square/vedaoyunu_square.jpeg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		A0F82FE93AC5412585958E21 /* zenginmutfagi_square.png */ = {isa = PBXFileReference; name = "zenginmutfagi_square.png"; path = "../src/assets/event_assets/theatres/square/zenginmutfagi_square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		451D7049E7184D35A62CF51D /* banner1.png */ = {isa = PBXFileReference; name = "banner1.png"; path = "../src/assets/banners/banner1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A0AEF71B38B14B0FA523F7BE /* banner2.jpg */ = {isa = PBXFileReference; name = "banner2.jpg"; path = "../src/assets/banners/banner2.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		062BD393A97D49CFB3A1552D /* banner3.jpg */ = {isa = PBXFileReference; name = "banner3.jpg"; path = "../src/assets/banners/banner3.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9436C963D94B48E1856B74DD /* banner4.jpg */ = {isa = PBXFileReference; name = "banner4.jpg"; path = "../src/assets/banners/banner4.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +400,10 @@
 				5B2FDDF3915B43EBA8259CBD /* istibdatkumpanyasi_square.jpg */,
 				19C0F88EAB96451D9444314E /* vedaoyunu_square.jpeg */,
 				A0F82FE93AC5412585958E21 /* zenginmutfagi_square.png */,
+				451D7049E7184D35A62CF51D /* banner1.png */,
+				A0AEF71B38B14B0FA523F7BE /* banner2.jpg */,
+				062BD393A97D49CFB3A1552D /* banner3.jpg */,
+				9436C963D94B48E1856B74DD /* banner4.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -572,6 +584,10 @@
 				6FCBCD4978AE4696B016CE38 /* istibdatkumpanyasi_square.jpg in Resources */,
 				D2A3220B592D4EE1BC8DFA21 /* vedaoyunu_square.jpeg in Resources */,
 				D45A7B016259467A9536F2FB /* zenginmutfagi_square.png in Resources */,
+				1538112857E549A7ADAEFA31 /* banner1.png in Resources */,
+				237806F9FDBB484CBFD36219 /* banner2.jpg in Resources */,
+				3D4F3918FD43421D9567F766 /* banner3.jpg in Resources */,
+				67006084E49849FFAE61545A /* banner4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,22 @@
       "sha1": "039fbff59306d5e4300ef7614d796844345575af"
     },
     {
+      "path": "src/assets/banners/banner1.png",
+      "sha1": "512b69876b8e0b09c5d0c6590dad83b6142d7c26"
+    },
+    {
+      "path": "src/assets/banners/banner2.jpg",
+      "sha1": "e7c805292448b6df170ef43123df0fb8c86cecf3"
+    },
+    {
+      "path": "src/assets/banners/banner3.jpg",
+      "sha1": "b32237aeb96cab1e965c43514fa09f6302e40aff"
+    },
+    {
+      "path": "src/assets/banners/banner4.jpg",
+      "sha1": "1a24b581a2dde5f748acc182c43d8b4c49f2bbe9"
+    },
+    {
       "path": "src/assets/event_assets/concerts/portrait/canozan_portrait.jpg",
       "sha1": "df02a1565f082c7a05b580793ead9521b7b0a260"
     },
