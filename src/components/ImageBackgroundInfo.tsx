@@ -16,6 +16,7 @@ import {
   SPACING,
 } from '../theme/theme';
 import CustomIcon from './CustomIcon';
+import { useNavigation } from '@react-navigation/native';
 
 interface ImageBackgroundInfoProps {
   EnableBackHandler: boolean;
@@ -32,6 +33,7 @@ interface ImageBackgroundInfoProps {
   place: string;
   BackHandler?: any;
   ToggleFavourite: any;
+  onPressPlace?:  () => void;
 }
 
 const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
@@ -48,8 +50,11 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
   place,
   BackHandler,
   ToggleFavourite,
-  date
+  date,
+  onPressPlace
 }) => {
+
+ 
   return (
     <View>
       <ImageBackground
@@ -133,7 +138,9 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                 <Text style={styles.RatingText}>{average_rating}</Text>
                 <Text style={styles.RatingCountText}>({ratings_count})</Text>
               </View>
-              
+             <TouchableOpacity
+              onPress={onPressPlace}
+             >
               <View style={styles.PlaceContainer}>
               <CustomIcon
                     name='location' 
@@ -143,6 +150,7 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                 <Text style={styles.PlaceText}>{place}</Text>
               
               </View>
+              </TouchableOpacity>
             </View>
           </View>
         </View>

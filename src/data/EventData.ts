@@ -8,7 +8,7 @@ const EventData = [
     Etkinlik başladıktan sonra gelen seyircilerimizin satın almış oldukları koltuğa oturamama durumundan Bubilet ve Organizatör sorumlu değildir. Organizatör firma ve Bubilet geç kalan misafirler için koltuk garantisi vermez. Bu sebeple etkinliğe konser saatinden önce gelmenizi önemle rica ederiz. 
     Etkinlik alanına giriş yapan katılımcıların alandan çıkış yapmaları halinde yeni bilet satın almaları gerekecektir.   
     `,
-    place: 'Ato Congresium Ankara',
+    place: 'Congresium Ankara',
     location: [
       { latitude: 39.911592700707516 },
       { longitude: 32.802930553879044 }
@@ -95,7 +95,7 @@ const EventData = [
     Organizasyon sahibi etkinlik bilet bedelini iade etmek koşuluyla uygun görmedikleri kişiyi etkinlik alanına almama hakkına sahiptir. 
     Etkinlik alanına yiyecek, içecek alınmamaktadır. 
     Etkinlik alanına evcil hayvan kabul edilmemektedir.`,
-    place: 'Ato Congresium Ankara',
+    place: 'Congresium Ankara',
     location: [
       { latitude: 39.911592700707516 },
       { longitude: 32.802930553879044 }

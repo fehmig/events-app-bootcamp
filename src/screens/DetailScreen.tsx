@@ -42,6 +42,12 @@ const DetailsScreen = ({ navigation, route }: any) => {
     navigation.pop();
   };
 
+  const handlePlacePress = () => {   
+      navigation.push('PlaceScreen', {
+        place: ItemOfIndex.place
+      });  
+  }
+
   const addToCarthandler = ({
     id,
     index,
@@ -87,6 +93,7 @@ const DetailsScreen = ({ navigation, route }: any) => {
           place={ItemOfIndex.place}
           BackHandler={BackHandler}
           ToggleFavourite={ToggleFavourite}
+          onPressPlace={handlePlacePress}
         />
 
         <View style={styles.FooterInfoArea}>

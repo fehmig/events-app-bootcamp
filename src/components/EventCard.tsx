@@ -31,7 +31,7 @@ interface EventCardProps {
   special_ingredient: string;
   average_rating: number;
   price: any;
-  buttonPressHandler: any;
+  buttonPressHandler?: any;
 }
 
 const EventCard: React.FC<EventCardProps> = ({
