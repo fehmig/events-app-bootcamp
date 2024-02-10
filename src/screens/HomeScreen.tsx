@@ -372,7 +372,7 @@ const HomeScreen = ({ navigation }: any) => {
           ))}
         </ScrollView>
 
-        {/* Coffee Flatlist */}
+        {/* Event Flatlist */}
 
         <FlatList
           ref={ListRef}

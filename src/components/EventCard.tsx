@@ -21,7 +21,7 @@ import BGIcon from './BGIcon';
 
 const CARD_WIDTH = Dimensions.get('window').width * 0.32;
 
-interface CoffeeCardProps {
+interface EventCardProps {
   id: string;
   index: number;
   type: string;
@@ -34,7 +34,7 @@ interface CoffeeCardProps {
   buttonPressHandler: any;
 }
 
-const EventCard: React.FC<CoffeeCardProps> = ({
+const EventCard: React.FC<EventCardProps> = ({
   id,
   index,
   type,

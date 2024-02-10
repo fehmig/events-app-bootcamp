@@ -19,7 +19,7 @@ import {
 import ImageBackgroundInfo from '../components/ImageBackgroundInfo';
 import PaymentFooter from '../components/PaymentFooter';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
-import CustomIcon from '../components/CustomIcon';
+
 
 const DetailsScreen = ({ navigation, route }: any) => {
   const ItemOfIndex = useStore((state: any) => state.EventList,

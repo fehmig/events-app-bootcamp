@@ -135,12 +135,13 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
               </View>
               
               <View style={styles.PlaceContainer}>
-                <Text style={styles.PlaceText}>{place}</Text>
-                <CustomIcon
+              <CustomIcon
                     name='location' 
                     size={FONTSIZE.size_24 }
                     color={COLORS.primaryOrangeHex}
                   />
+                <Text style={styles.PlaceText}>{place}</Text>
+              
               </View>
             </View>
           </View>
@@ -237,18 +238,19 @@ const styles = StyleSheet.create({
   },
   PlaceContainer: {
     height: 55,
-    width: 70 * 2 + SPACING.space_20,
-    padding:SPACING.space_8,
+    width: 60 * 2 + SPACING.space_20,
+    padding:SPACING.space_10,
     borderRadius: BORDERRADIUS.radius_15,
     flexDirection:'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: COLORS.primaryBlackHex,
   },
   PlaceText: {
+    width:90,
     fontFamily: FONTFAMILY.poppins_regular,
     fontSize: FONTSIZE.size_12,
     color: COLORS.primaryWhiteHex,
+    marginLeft:SPACING.space_8
   },
 });
 
