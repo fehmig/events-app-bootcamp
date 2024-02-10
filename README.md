@@ -16,4 +16,4 @@ React Native ile geliştirdiğim uygulamada çeşitli kategorilere ait etkinlikl
 ![Görsel 11](./src/assets/app_images/ss11.png)
 ![Görsel 12](./src/assets/app_images/ss12.png)
 ![Görsel 13](./src/assets/app_images/ss13.png)
-![Görsel 14](./src/assets/app_images/ss14.png)
+
